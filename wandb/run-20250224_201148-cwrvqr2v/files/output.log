@@ -1,0 +1,36 @@
+Traceback (most recent call last):
+  File "C:\da24m021_da6401_assignment1\ques1_load_dataset.py", line 41, in <module>
+    load_fashion_mnist(wandb_log = True)
+  File "C:\da24m021_da6401_assignment1\ques1_load_dataset.py", line 33, in load_fashion_mnist
+    wandb.log({"Question 1: fashion_mnist_samples": wandb.Image(plt)})
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 449, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 401, in wrapper_fn
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 391, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 1873, in log
+    self._log(data=data, step=step, commit=commit)
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 1587, in _log
+    self._partial_history_callback(data, step, commit)
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\wandb_run.py", line 1417, in _partial_history_callback
+    self._backend.interface.publish_partial_history(
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\interface\interface.py", line 674, in publish_partial_history
+    data = history_dict_to_json(run, data, step=user_step, ignore_copy_err=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\data_types\utils.py", line 54, in history_dict_to_json
+    payload[key] = val_to_json(
+                   ^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\data_types\utils.py", line 162, in val_to_json
+    val.bind_to_run(run, key, namespace)
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\data_types\image.py", line 405, in bind_to_run
+    super().bind_to_run(run, key, step, id_, ignore_copy_err=ignore_copy_err)
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\data_types\base_types\media.py", line 186, in bind_to_run
+    file_path = _wb_filename(key, step, id_, extension)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Siddhant\AppData\Local\Programs\Python\Python312\Lib\site-packages\wandb\sdk\data_types\base_types\media.py", line 74, in _wb_filename
+    raise ValueError(
+ValueError: Media Question 1: fashion_mnist_samples is invalid. Please remove invalid filename characters (\, :, *, ?, ", <, >, |)
