@@ -1,23 +1,52 @@
+import numpy as np
+
+
 # Stochastic Gradient Descent
-def SGD():
-    pass
+class SGD:
+    def __init__(self, parameters = None, learning_rate = 0.001):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+
+    def step(self, gradients):
+        for parameter, grad in zip(self.parameters, gradients):
+            parameter -= self.learning_rate * grad
+
 
 # Momentum Based Gradient Descent
-def MomentumGD():
-    pass
+class MomentumGD:
+    def __init__(self, parameters = None, learning_rate=0.001, momentum=0.9):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+        self.momentum = momentum
+        self.u = [np.zeros_like(param) for param in parameters]
+
+    def step(self, gradients):
+        for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
+            self.u[i] = self.momentum * self.u[i] + self.learning_rate * grad
+            parameter -= self.u[i]
+
 
 # Nesterov Accelerated Gradient Descent
-def NesterovAcceleratedGD():
-    pass
+class NesterovAccGD:
+    def __init__(self, parameters=None, learning_rate=0.001, momentum=0.9):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+        self.momentum = momentum
+        self.velocity = [np.zeros_like(param) for param in parameters]
+
+    def step(self, gradients):
+        for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
+            self.u[i] = self.momentum * self.u[i] + self.learning_rate * grad
+            parameter -= self.u[i]
 
 # RMSProp
-def RMSProp():
+class RMSProp():
     pass
 
 # Adam
-def Adam():
+class Adam():
     pass
 
 # Nadam
-def Nadam():
+class Nadam():
     pass

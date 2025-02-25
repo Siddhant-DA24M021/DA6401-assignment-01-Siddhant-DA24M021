@@ -27,9 +27,9 @@ class SquaredErrorLoss:
         self.targets = targets # batch_size x 10
 
         # Targets are One-Hot Encoded
-        losses = np.sum((self.target - self.preds)**2, axis = 1)
+        losses = np.sum((self.targets - self.preds)**2, axis = 1)
         return np.mean(losses)
     
     def backward(self):
-        grad = 2 * (self.target - self.preds)
+        grad = -2 * (self.targets - self.preds)
         return grad # Derivative of loss function w.r.t. predictions (y-hat)
