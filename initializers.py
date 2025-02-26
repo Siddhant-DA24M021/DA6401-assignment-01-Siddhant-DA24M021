@@ -22,5 +22,5 @@ class RandomNormalInitializer:
         return weights, biases
     
     
-class XavierInitialization:
+class XavierInitializer:
     pass

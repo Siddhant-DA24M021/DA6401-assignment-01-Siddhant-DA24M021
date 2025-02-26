@@ -17,6 +17,9 @@ class LinearLayer:
         return np.matmul(x, self.weights) + self.bias
     
     def backward(self, grad_output):
+        
+        # This will update the gradients of weights and biases
+
         self.dweights = np.matmul(self.input.T, grad_output)
         self.dbias = np.sum(grad_output, axis = 0 , keepdims=True)
         

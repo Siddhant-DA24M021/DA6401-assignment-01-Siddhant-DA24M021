@@ -14,7 +14,7 @@ class SGD:
 
 # Momentum Based Gradient Descent
 class MomentumGD:
-    def __init__(self, parameters = None, learning_rate=0.001, momentum=0.9):
+    def __init__(self, parameters = None, learning_rate = 0.001, momentum = 0.9):
         self.parameters = parameters
         self.learning_rate = learning_rate
         self.momentum = momentum
@@ -28,7 +28,7 @@ class MomentumGD:
 
 # Nesterov Accelerated Gradient Descent
 class NesterovAccGD:
-    def __init__(self, parameters=None, learning_rate=0.001, momentum=0.9):
+    def __init__(self, parameters = None, learning_rate = 0.001, momentum = 0.9):
         self.parameters = parameters
         self.learning_rate = learning_rate
         self.momentum = momentum

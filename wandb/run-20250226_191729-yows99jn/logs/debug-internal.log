@@ -1,0 +1,16 @@
+{"time":"2025-02-26T19:17:29.3313532+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250226_191729-yows99jn\\logs\\debug-core.log"}
+{"time":"2025-02-26T19:17:30.8648444+05:30","level":"INFO","msg":"created new stream","id":"yows99jn"}
+{"time":"2025-02-26T19:17:30.8648444+05:30","level":"INFO","msg":"stream: started","id":"yows99jn"}
+{"time":"2025-02-26T19:17:30.8657333+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:30.8657333+05:30","level":"INFO","msg":"sender: started","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:30.8657333+05:30","level":"INFO","msg":"handler: started","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:31.3621239+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-26T19:17:32.144077+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-26T19:17:32.144077+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-26T19:17:33.1511396+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-metadata.json","runtime_seconds":0.5942976,"progress":"1.1KB/1.1KB"},{"desc":"uploading media\\images\\Question_1_fashion_mnist_samples_0_be41757ffb17b56fdd1f.png","runtime_seconds":0.5942976,"progress":"33.8KB/33.8KB"},{"desc":"uploading config.yaml","runtime_seconds":0.2888946,"progress":"646B/646B"}],"total_operations":3}}
+{"time":"2025-02-26T19:17:34.0921549+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-26T19:17:35.451835+05:30","level":"INFO","msg":"stream: closing","id":"yows99jn"}
+{"time":"2025-02-26T19:17:35.451835+05:30","level":"INFO","msg":"handler: closed","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:35.451835+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:35.451835+05:30","level":"INFO","msg":"sender: closed","stream_id":"yows99jn"}
+{"time":"2025-02-26T19:17:35.4524814+05:30","level":"INFO","msg":"stream: closed","id":"yows99jn"}

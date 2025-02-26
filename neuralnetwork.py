@@ -11,7 +11,7 @@ class NeuralNetwork:
 
 
     def backward(self): # BackPropagation Step
-        grad_output = self.loss.backward() 
+        grad_output = self.loss.backward() # Will calculate and populate dL/dy-hat
 
         for layer in reversed(self.layers):
             grad_output = layer.backward(grad_output) # This will populate the gradients of all the model parameters
