@@ -3,6 +3,8 @@ from activation import Softmax, Sigmoid, Tanh, ReLU, Identity
 from initializers import RandomUniformInitializer, RandomNormalInitializer, XavierInitializer
 from loss import CrossEntropyLoss, SquaredErrorLoss
 
+
+# Train Validation split functionality for dataset
 def train_val_split(X, y, val_ratio = 0.1):
     num_samples = X.shape[0]
     val_size = int(num_samples * val_ratio)
@@ -19,6 +21,8 @@ def train_val_split(X, y, val_ratio = 0.1):
     return X_train, y_train, X_val, y_val
 
 
+
+
 def get_activation_function(name):
     activation_functions = {
         "softmax": Softmax,
@@ -31,6 +35,9 @@ def get_activation_function(name):
         raise ValueError(f"Invalid activation function name: {name}")
     return activation_functions[name]()
 
+
+
+
 def get_initializer(name):
     initializers = {
         "random": RandomNormalInitializer,
@@ -41,6 +48,9 @@ def get_initializer(name):
     if name not in initializers:
         raise ValueError(f"Invalid initializer name: {name}")
     return initializers[name]()
+
+
+
 
 def get_loss_function(name):
     loss_functions = {

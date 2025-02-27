@@ -7,6 +7,7 @@ from utils import train_val_split, get_activation_function, get_loss_function, g
 from optimizer import SGD, MomentumGD, NesterovAccGD, RMSProp, Adam, Nadam
 from neuralnetwork import NeuralNetwork
 import argparse
+import wandb
 
 
 # Parse command line arguments
@@ -15,8 +16,8 @@ def parse_arguments():
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("-wp", "--wandb_project", type = str, default = "myprojectname", help="Project name used to track experiments in Weights & Biases dashboard")
-    parser.add_argument("-we", "--wandb_entity", type = str, default = "myname", help="Wandb Entity used to track experiments in the Weights & Biases dashboard.")
+    parser.add_argument("-wp", "--wandb_project", type = str, default = "da24m021_da6401_assignment1", help="Project name used to track experiments in Weights & Biases dashboard")
+    parser.add_argument("-we", "--wandb_entity", type = str, default = "da24m021-indian-institute-of-technology-madras", help="Wandb Entity used to track experiments in the Weights & Biases dashboard.")
     parser.add_argument("-d", "--dataset", type = str, choices = ["mnist", "fashion_mnist"], default = "fashion_mnist", help = "Dataset to use")
     parser.add_argument("-e", "--epochs", type = int, default = 10, help = "Number of epochs to train neural network.")
     parser.add_argument("-b", "--batch_size", type = int, default = 4, help = "Batch size used to train neural network.")
@@ -43,36 +44,44 @@ def main():
     args = parse_arguments()
 
 
-    # B. Download and load the dataset
-    (X_train, y_train), (X_test, y_test), class_names = load_dataset(args.dataset, False)
+    # B. Initialize wandb project
+    wandb.init(project = args.wandb_project, entity = args.wandb_entity) 
 
 
-    # C. Data Preprocessing
-    # C-1. Flatten the dataset
+    # C. Download and load the dataset
+    (X_train, y_train), (X_test, y_test), class_names, image_dict = load_dataset(args.dataset)
+
+
+    # Log the sample images on wandb report
+    wandb.log({"Sample Images": [wandb.Image(img, caption = class_names[class_id]) for class_id, img in image_dict.items()]})
+
+
+    # D. Data Preprocessing
+    # D-1. Flatten the dataset
     X_train = X_train.reshape(X_train.shape[0], -1)
     X_test = X_test.reshape(X_test.shape[0], -1)
 
-    # C-2. Standardize the dataset between 0-1
+    # D-2. Standardize the dataset between 0-1
     X_train = X_train/255.0
     X_test = X_test/255.0
 
-    # C-3. One-Hot Encode the labels for easier processing
+    # D-3. One-Hot Encode the labels for easier processing
     num_classes = len(class_names)
     y_train = np.eye(num_classes)[y_train]
     y_test = np.eye(num_classes)[y_test]
 
 
-    # D. Create train-val split
+    # E. Create train-val split
     X_train, y_train, X_val, y_val = train_val_split(X_train, y_train, val_ratio = 0.1)
 
 
-    # E. Prepare the Dataloader for batch generation
+    # F. Prepare the Dataloader for batch generation
     train_dataloader = Dataloader(X_train, y_train, batch_size = args.batch_size, shuffle = True)
     val_dataloader = Dataloader(X_val, y_val, batch_size = args.batch_size, shuffle = True)
     test_dataloader = Dataloader(X_test, y_test)
 
 
-    # F. Create the model architecture and initialize other parameters
+    # G. Create the model architecture and initialize other parameters
     input_size = X_train.shape[1]
     output_size = num_classes
     hidden_size = args.hidden_size
@@ -94,15 +103,15 @@ def main():
     layers.append(output_activation)
 
 
-    # G. Initialize loss function
+    # H. Initialize loss function
     loss_fn = get_loss_function(args.loss)
 
 
-    # H. Initialize Neural Network model
+    # I. Initialize Neural Network model
     model = NeuralNetwork(layers = layers, loss = loss_fn)
 
 
-    # I. Initialize optimizer
+    # J. Initialize optimizer
     if args.optimizer == "sgd":
         optimizer = SGD(parameters = model.parameters(), learning_rate = args.learning_rate)
     elif args.optimizer == "momentum":
@@ -114,6 +123,8 @@ def main():
     # Training Loop
     for epoch in range(args.epochs):
         losses = []
+        a = 0
+        b = 0
         for data, labels in train_dataloader:
             # Forward pass
             predictions = model.forward(data)
@@ -128,9 +139,15 @@ def main():
             optimizer.step(model.gradients())
             losses.append(loss_value)
 
+            a += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
+            b += data.shape[0]
 
-        print(np.average(losses))
 
+        print(np.average(losses), " ",  a/b)
+
+
+        # Close wandb
+        wandb.finish()
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,3 @@
-import wandb
 import numpy as np
 import matplotlib.pyplot as plt
 from keras.datasets import mnist, fashion_mnist
@@ -6,7 +5,7 @@ from keras.datasets import mnist, fashion_mnist
 
 
 # Load the dataset and plot images from each class
-def load_dataset(dataset_name = "fashion_mnist", wandb_log = True):
+def load_dataset(dataset_name = "fashion_mnist"):
 
     if dataset_name == "mnist": 
         # Download mnist dataset
@@ -24,25 +23,9 @@ def load_dataset(dataset_name = "fashion_mnist", wandb_log = True):
 
     # Select sample images
     classes = np.unique(y_train)
-    sample_images = [X_train[np.where(y_train == cls)[0][0]] for cls in classes]
+    image_dict = {class_name: X_train[np.where(y_train == class_name)[0][0]] for class_name in classes}
 
-    # Plot sample images
-    plt.figure(figsize = (10, 5))
-    for i in range(len(classes)):
-        plt.subplot(2, 5, i+1)
-        plt.imshow(sample_images[i])
-        plt.title(class_names[i])
-        plt.axis(False)
-
-    if wandb_log:
-        # Initialize and log to wandb
-        wandb.init(project="da24m021_da6401_assignment1")
-        wandb.log({"Question_1_fashion_mnist_samples": wandb.Image(plt)})
-        wandb.finish()
-    else:
-        plt.show() # only show if not logging to wandb.
-
-    return (X_train, y_train), (X_test, y_test), class_names
+    return (X_train, y_train), (X_test, y_test), class_names, image_dict
 
 if __name__ == "__main__":
     load_dataset()
