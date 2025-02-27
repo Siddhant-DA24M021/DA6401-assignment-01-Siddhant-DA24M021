@@ -1,0 +1,16 @@
+{"time":"2025-02-27T14:35:05.1790763+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250227_143505-jsh0g1cp\\logs\\debug-core.log"}
+{"time":"2025-02-27T14:35:05.8125292+05:30","level":"INFO","msg":"created new stream","id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:05.8125292+05:30","level":"INFO","msg":"stream: started","id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:05.8125292+05:30","level":"INFO","msg":"handler: started","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:05.8125292+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:05.8130807+05:30","level":"INFO","msg":"sender: started","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:06.1693291+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-27T14:35:31.5595025+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-27T14:35:31.5595025+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-27T14:35:32.5628692+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.6892777},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6892777,"progress":"999B/999B"},{"desc":"uploading config.yaml","runtime_seconds":0.3880646,"progress":"1.0KB/1.0KB"}],"total_operations":3}}
+{"time":"2025-02-27T14:35:33.1739828+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-27T14:35:34.5333147+05:30","level":"INFO","msg":"stream: closing","id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:34.5333147+05:30","level":"INFO","msg":"handler: closed","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:34.5333147+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:34.5333147+05:30","level":"INFO","msg":"sender: closed","stream_id":"jsh0g1cp"}
+{"time":"2025-02-27T14:35:34.5333147+05:30","level":"INFO","msg":"stream: closed","id":"jsh0g1cp"}

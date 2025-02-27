@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 from load_dataset import load_dataset
 from dataloader import Dataloader
 from linearlayer import LinearLayer
-from utils import train_val_split, get_activation_function, get_loss_function, get_initializer
-from optimizer import SGD, MomentumGD, NesterovAccGD, RMSProp, Adam, Nadam
+from utils import get_activation_function, get_loss_function, get_initializer, get_optimizer
 from neuralnetwork import NeuralNetwork
+from evaluate_model import evaluate
 import argparse
 import wandb
 
@@ -34,6 +34,7 @@ def parse_arguments():
     parser.add_argument("-nhl", "--num_layers", type = int, default = 4, help = "Number of hidden layers used in feedforward neural network.")
     parser.add_argument("-sz", "--hidden_size", type = int, default = 64, help = "Number of hidden neurons in a feedforward layer.")
     parser.add_argument("-a", "--activation", type = str, choices = ["identity", "sigmoid", "tanh", "ReLU"], default = "sigmoid", help = "Activation function")
+    parser.add_argument("-oa", "--output_activation", type = str, choices = ["softmax", "identity", "sigmoid", "tanh", "ReLU"], default = "softmax", help = "Output activation function")
 
     return parser.parse_args()
 
@@ -48,40 +49,41 @@ def main():
     wandb.init(project = args.wandb_project, entity = args.wandb_entity) 
 
 
-    # C. Download and load the dataset
+    # C. Log in my details
+    wandb.config.update({"NAME": "SIDDHANT BARANWAL", "ROLL NO.": "DA24M021"})
+
+
+    # D. Download and load the dataset
     (X_train, y_train), (X_test, y_test), class_names, image_dict = load_dataset(args.dataset)
 
 
-    # Log the sample images on wandb report
+    # E. Log the sample images on wandb report
     wandb.log({"Sample Images": [wandb.Image(img, caption = class_names[class_id]) for class_id, img in image_dict.items()]})
 
 
-    # D. Data Preprocessing
-    # D-1. Flatten the dataset
+    # F. Data Preprocessing
+    # F-1. Flatten the dataset
     X_train = X_train.reshape(X_train.shape[0], -1)
     X_test = X_test.reshape(X_test.shape[0], -1)
 
-    # D-2. Standardize the dataset between 0-1
+    # F-2. Standardize the dataset between 0-1
     X_train = X_train/255.0
     X_test = X_test/255.0
 
-    # D-3. One-Hot Encode the labels for easier processing
+    # F-3. One-Hot Encode the labels for easier processing
     num_classes = len(class_names)
     y_train = np.eye(num_classes)[y_train]
     y_test = np.eye(num_classes)[y_test]
 
 
-    # E. Create train-val split
-    X_train, y_train, X_val, y_val = train_val_split(X_train, y_train, val_ratio = 0.1)
 
 
-    # F. Prepare the Dataloader for batch generation
+    # G. Prepare the Dataloader for batch generation
     train_dataloader = Dataloader(X_train, y_train, batch_size = args.batch_size, shuffle = True)
-    val_dataloader = Dataloader(X_val, y_val, batch_size = args.batch_size, shuffle = True)
     test_dataloader = Dataloader(X_test, y_test)
 
 
-    # G. Create the model architecture and initialize other parameters
+    # H. Create the model architecture and initialize other parameters
     input_size = X_train.shape[1]
     output_size = num_classes
     hidden_size = args.hidden_size
@@ -98,33 +100,38 @@ def main():
         layers.append(get_activation_function(args.activation))
 
     output_layer = LinearLayer(nin = hidden_size, nout = output_size, initializer = weight_initializer)
-    output_activation = get_activation_function("softmax")
+    output_activation = get_activation_function(args.output_activation)
     layers.append(output_layer)
     layers.append(output_activation)
 
 
-    # H. Initialize loss function
+    # I. Initialize loss function
     loss_fn = get_loss_function(args.loss)
 
 
-    # I. Initialize Neural Network model
+    # J. Initialize Neural Network model
     model = NeuralNetwork(layers = layers, loss = loss_fn)
 
 
-    # J. Initialize optimizer
-    if args.optimizer == "sgd":
-        optimizer = SGD(parameters = model.parameters(), learning_rate = args.learning_rate)
-    elif args.optimizer == "momentum":
-        optimizer = MomentumGD(parameters = model.parameters(), learning_rate = args.learning_rate, momentum = args.momentum)
-    elif args.optimizer == "nag":
-        optimizer = NesterovAccGD(parameters = model.parameters(), learning_rate = args.learning_rate, momentum = args.momentum)
+    # K. Initialize optimizer (Will only use those arguments which in required for that optimizer)
+    optimizer = get_optimizer(args.optimizer,
+                              model.parameters(),
+                              learning_rate = args.learning_rate,
+                              momentum = args.momentum,
+                              beta = args.beta,
+                              beta1 = args.beta1,
+                              beta2 = args.beta2,
+                              epsilon = args.epsilon,
+                              weight_decay = args.weight_decay)
 
     
-    # Training Loop
+    # L. Training Loop
+    print("--------------------------------------------------------------------------------------------------")
     for epoch in range(args.epochs):
         losses = []
-        a = 0
-        b = 0
+        correct = 0
+        total = 0
+
         for data, labels in train_dataloader:
             # Forward pass
             predictions = model.forward(data)
@@ -139,15 +146,29 @@ def main():
             optimizer.step(model.gradients())
             losses.append(loss_value)
 
-            a += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
-            b += data.shape[0]
+            correct += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
+            total += data.shape[0]
+
+        print(f"Epoch {epoch + 1: 4}:      Training Loss - {np.mean(losses) : 10.5f}   &   Training Accuracy - {correct/total: 10.5f}")
+        
+        # M. Evaluation metric on test data
+        test_loss, test_accuracy = evaluate(model, test_dataloader)
 
 
-        print(np.average(losses), " ",  a/b)
+        # N. Log details on wandb
+        wandb.log({
+            "epoch": epoch+1,
+            "train_loss": loss_value,
+            "train_accuracy": correct/total,
+            "test_loss": test_loss,
+            "test_accuracy": test_accuracy
+        })
+
+    print("--------------------------------------------------------------------------------------------------")
 
 
-        # Close wandb
-        wandb.finish()
+    # O. Close wandb
+    wandb.finish()
 
 if __name__ == "__main__":
     main()

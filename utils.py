@@ -2,6 +2,7 @@ import numpy as np
 from activation import Softmax, Sigmoid, Tanh, ReLU, Identity
 from initializers import RandomUniformInitializer, RandomNormalInitializer, XavierInitializer
 from loss import CrossEntropyLoss, SquaredErrorLoss
+from optimizer import SGD, MomentumGD, NesterovAccGD, RMSProp, Adam, Nadam
 
 
 # Train Validation split functionality for dataset
@@ -61,3 +62,52 @@ def get_loss_function(name):
     if name not in loss_functions:
         raise ValueError(f"Invalid loss function name: {name}")
     return loss_functions[name]()
+
+
+def get_optimizer(name, model_params, **kwargs):
+
+    optimizer = None
+    learning_rate =  kwargs.pop("learning_rate", 0.001)
+
+    if name == "sgd":
+        optimizer = SGD(parameters = model_params, 
+                        learning_rate = learning_rate)
+        
+    elif name == "momentum":
+        momentum = kwargs.pop("momentum", 0.5)
+        optimizer = MomentumGD(parameters = model_params, 
+                               learning_rate = learning_rate, 
+                               momentum = momentum)
+        
+    elif name == "nag":
+        momentum = kwargs.pop("momentum", 0.5)
+        optimizer = NesterovAccGD(parameters = model_params, 
+                                  learning_rate = learning_rate, 
+                                  momentum = momentum)
+        
+    elif name == "rmsprop":
+        beta = kwargs.pop("beta", 0.5)
+        optimizer = RMSProp(parameters = model_params, 
+                            learning_rate = learning_rate,
+                            beta = beta)
+        
+    elif name == "adam":
+        beta1 = kwargs.pop("beta1", 0.5)
+        beta2 = kwargs.pop("beta2", 0.5)
+        optimizer = Adam(parameters = model_params, 
+                            learning_rate = learning_rate,
+                            beta1 = beta1,
+                            beta2 = beta2)
+        
+    elif name == "nadam":
+        beta1 = kwargs.pop("beta1", 0.5)
+        beta2 = kwargs.pop("beta2", 0.5)
+        optimizer = RMSProp(parameters = model_params, 
+                            learning_rate = learning_rate,
+                            beta1 = beta1,
+                            beta2 = beta2)
+
+    if not optimizer:
+        raise ValueError(f"Invalid optimizer name: {name}")
+    
+    return optimizer
