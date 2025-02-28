@@ -1,0 +1,19 @@
+--------------------------------------------------------------------------------------------------
+Epoch    1:      Training Loss -    3.13068   &   Training Accuracy -    0.10119
+Epoch    2:      Training Loss -    2.03230   &   Training Accuracy -    0.40286
+Epoch    3:      Training Loss -    4.05619   &   Training Accuracy -    0.49984
+Epoch    4:      Training Loss -    2.83925   &   Training Accuracy -    0.52344
+Epoch    5:      Training Loss -    4.09360   &   Training Accuracy -    0.47104
+Epoch    6:      Training Loss -    5.77768   &   Training Accuracy -    0.45154
+Traceback (most recent call last):
+  File "C:\da24m021_da6401_assignment1\train.py", line 176, in <module>
+    main()
+  File "C:\da24m021_da6401_assignment1\train.py", line 143, in main
+    model.backward()
+  File "C:\da24m021_da6401_assignment1\neuralnetwork.py", line 17, in backward
+    grad_output = layer.backward(grad_output) # This will populate the gradients of all the model parameters
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\da24m021_da6401_assignment1\linearlayer.py", line 23, in backward
+    self.dweights = np.matmul(self.input.T, grad_output)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

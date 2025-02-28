@@ -41,7 +41,18 @@ class NesterovAccGD:
 
 # RMSProp
 class RMSProp():
-    pass
+    def __init__(self, parameters = None, learning_rate = 0.01, beta = 0.5, epsilon = 1e-6):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+        self.beta = beta
+        self.epsilon = epsilon
+        self.u = [np.zeros_like(param) for param in parameters]
+
+    def step(self, gradients):
+        for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
+            self.u[i] = self.beta * self.u[i] + (1 - self.beta) * grad**2
+            effective_lr = self.learning_rate / (self.u[i] + self.epsilon)**0.5
+            parameter -= effective_lr * grad
 
 # Adam
 class Adam():

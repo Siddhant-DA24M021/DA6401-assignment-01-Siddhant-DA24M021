@@ -149,7 +149,9 @@ def main():
             correct += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
             total += data.shape[0]
 
-        print(f"Epoch {epoch + 1: 4}:      Training Loss - {np.mean(losses) : 10.5f}   &   Training Accuracy - {correct/total: 10.5f}")
+        train_loss = np.mean(losses)
+        train_accuracy = correct/total
+        print(f"Epoch {epoch + 1: 4}:      Training Loss - {train_loss : 10.5f}   &   Training Accuracy - {train_accuracy: 10.5f}")
         
         # M. Evaluation metric on test data
         test_loss, test_accuracy = evaluate(model, test_dataloader)
@@ -158,8 +160,8 @@ def main():
         # N. Log details on wandb
         wandb.log({
             "epoch": epoch+1,
-            "train_loss": loss_value,
-            "train_accuracy": correct/total,
+            "train_loss": train_loss,
+            "train_accuracy": train_accuracy,
             "test_loss": test_loss,
             "test_accuracy": test_accuracy
         })

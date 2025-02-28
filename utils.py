@@ -87,9 +87,11 @@ def get_optimizer(name, model_params, **kwargs):
         
     elif name == "rmsprop":
         beta = kwargs.pop("beta", 0.5)
+        epsilon = kwargs.pop("epsilon", 1e-6)
         optimizer = RMSProp(parameters = model_params, 
                             learning_rate = learning_rate,
-                            beta = beta)
+                            beta = beta,
+                            epsilon = epsilon)
         
     elif name == "adam":
         beta1 = kwargs.pop("beta1", 0.5)
