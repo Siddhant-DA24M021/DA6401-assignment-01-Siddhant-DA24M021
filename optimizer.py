@@ -32,7 +32,7 @@ class NesterovAccGD:
         self.parameters = parameters
         self.learning_rate = learning_rate
         self.momentum = momentum
-        self.velocity = [np.zeros_like(param) for param in parameters]
+        self.u = [np.zeros_like(param) for param in parameters]
 
     def step(self, gradients):
         for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):

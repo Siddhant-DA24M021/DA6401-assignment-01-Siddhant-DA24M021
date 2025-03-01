@@ -12,14 +12,14 @@ def load_dataset(dataset_name = "fashion_mnist"):
         (X_train, y_train), (X_test, y_test) = mnist.load_data()
 
         # Class names in MNIST
-        class_names = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+        class_names = np.array(['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'])
     else:
         # Download fashion_mnist dataset
         (X_train, y_train), (X_test, y_test) = fashion_mnist.load_data()
 
         # Class names in Fashion-MNIST
-        class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 
-                    'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
+        class_names = np.array(['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat', 
+                    'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot'])
 
     # Select sample images
     classes = np.unique(y_train)

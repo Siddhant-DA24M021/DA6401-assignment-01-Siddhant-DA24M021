@@ -1,0 +1,16 @@
+{"time":"2025-02-28T20:34:05.0536821+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250228_203404-lknvroo6\\logs\\debug-core.log"}
+{"time":"2025-02-28T20:34:05.1751723+05:30","level":"INFO","msg":"created new stream","id":"lknvroo6"}
+{"time":"2025-02-28T20:34:05.1759228+05:30","level":"INFO","msg":"stream: started","id":"lknvroo6"}
+{"time":"2025-02-28T20:34:05.1759228+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:34:05.1759228+05:30","level":"INFO","msg":"sender: started","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:34:05.1759228+05:30","level":"INFO","msg":"handler: started","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:34:05.7394538+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-28T20:35:06.399294+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-28T20:35:06.3999337+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-28T20:35:07.4225967+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-lknvroo6-PredictionSamples","runtime_seconds":1.0276418},{"desc":"uploading output.log","runtime_seconds":0.3072486,"progress":"1008B/1008B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3072486,"progress":"1.6KB/1.6KB"},{"desc":"uploading config.yaml","runtime_seconds":0.0119261,"progress":"711B/711B"}],"total_operations":4}}
+{"time":"2025-02-28T20:35:10.8281209+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-28T20:35:12.4703246+05:30","level":"INFO","msg":"stream: closing","id":"lknvroo6"}
+{"time":"2025-02-28T20:35:12.4703246+05:30","level":"INFO","msg":"handler: closed","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:35:12.4703246+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:35:12.4703246+05:30","level":"INFO","msg":"sender: closed","stream_id":"lknvroo6"}
+{"time":"2025-02-28T20:35:12.4703246+05:30","level":"INFO","msg":"stream: closed","id":"lknvroo6"}

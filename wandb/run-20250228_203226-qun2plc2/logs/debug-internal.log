@@ -1,0 +1,15 @@
+{"time":"2025-02-28T20:32:26.329366+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250228_203226-qun2plc2\\logs\\debug-core.log"}
+{"time":"2025-02-28T20:32:26.4610539+05:30","level":"INFO","msg":"created new stream","id":"qun2plc2"}
+{"time":"2025-02-28T20:32:26.4616053+05:30","level":"INFO","msg":"stream: started","id":"qun2plc2"}
+{"time":"2025-02-28T20:32:26.4616053+05:30","level":"INFO","msg":"handler: started","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:32:26.4622698+05:30","level":"INFO","msg":"sender: started","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:32:26.4622698+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:32:26.9506289+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-02-28T20:33:19.7097701+05:30","level":"INFO","msg":"stream: closing","id":"qun2plc2"}
+{"time":"2025-02-28T20:33:19.7097701+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-02-28T20:33:19.7103823+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-02-28T20:33:20.7029319+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-02-28T20:33:21.037144+05:30","level":"INFO","msg":"handler: closed","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:33:21.037144+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:33:21.037144+05:30","level":"INFO","msg":"sender: closed","stream_id":"qun2plc2"}
+{"time":"2025-02-28T20:33:21.0374967+05:30","level":"INFO","msg":"stream: closed","id":"qun2plc2"}

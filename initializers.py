@@ -24,7 +24,6 @@ class RandomNormalInitializer:
     
 class XavierInitializer:
     def weightsandbiases(self, nin, nout):
-        print("Hi")
         x = np.sqrt(6 / (nin + nout))
         weights = np.random.uniform(-x, x, (nin, nout))
         biases = np.random.uniform(-x, x, (1, nout))
