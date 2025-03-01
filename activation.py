@@ -15,6 +15,8 @@ class Softmax:
     
     def backward(self, grad_output):
         # derivative of loss function w.r.t. pre-activations going in the softmax layer
+        # Would have been a single liner if the loss and output function would have been merged
+        # But as mean squared loss is also asked, so I thought it would be better to make the softmax as standalone independent of loss function
         batch_size = self.output.shape[0]
         num_classes = self.output.shape[1]
         grad_input = np.zeros_like(grad_output)
@@ -31,7 +33,8 @@ class Softmax:
         return grad_input
 
     def parameters(self):
-        return []
+        # This needs no parameters, this function is included because it is treated as a layer in my implementation as it should be for backprop
+        return [] 
     
     def gradients(self):
         return []
@@ -52,7 +55,8 @@ class Sigmoid:
         return grad_output * self.output * (1 - self.output)
     
     def parameters(self):
-        return []
+        # This needs no parameters, this function is included because it is treated as a layer in my implementation as it should be for backprop
+        return [] 
     
     def gradients(self):
         return []
@@ -74,6 +78,7 @@ class Tanh:
         return grad_output * (1 - self.output ** 2)
     
     def parameters(self):
+        # This needs no parameters, this function is included because it is treated as a layer in my implementation as it should be for backprop
         return []
     
     def gradients(self):
@@ -98,6 +103,7 @@ class ReLU:
         return grad_output * (self.input > 0)
     
     def parameters(self):
+        # This needs no parameters, this function is included because it is treated as a layer in my implementation as it should be for backprop
         return []
     
     def gradients(self):
@@ -119,6 +125,7 @@ class Identity:
         return grad_output * 1
     
     def parameters(self):
+        # This needs no parameters, this function is included because it is treated as a layer in my implementation as it should be for backprop
         return []
     
     def gradients(self):

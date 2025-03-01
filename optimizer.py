@@ -33,8 +33,10 @@ class NesterovAccGD:
         self.learning_rate = learning_rate
         self.momentum = momentum
         self.u = [np.zeros_like(param) for param in parameters]
+        self.prev_parameters = [param.copy() for param in parameters]
 
     def step(self, gradients):
+        # This need some update, currently it is momentumgd
         for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
             self.u[i] = self.momentum * self.u[i] + self.learning_rate * grad
             parameter -= self.u[i]
