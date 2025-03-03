@@ -4,7 +4,6 @@ from load_dataset import load_dataset
 from dataloader import Dataloader
 from linearlayer import LinearLayer
 from utils import train_val_split, get_activation_function, get_loss_function, get_initializer, get_optimizer
-from optimizer import SGD, MomentumGD, NesterovAccGD, RMSProp, Adam, Nadam
 from neuralnetwork import NeuralNetwork
 from evaluate_model import evaluate
 import wandb
@@ -48,29 +47,24 @@ def sweep_hyperparameters(config = None):
 
         # Prepare the Dataloader for batch generation
         train_dataloader = Dataloader(X_train, y_train, batch_size = config.batch_size, shuffle = True)
-        val_dataloader = Dataloader(X_val, y_val, batch_size = config.batch_size)
 
 
         # Create the model architecture and initialize other parameters
         input_size = X_train.shape[1]
         output_size = num_classes
         hidden_size = config.hidden_size
-
         weight_initializer = get_initializer(config.weight_init)
-
         layers = []
-        hidden_layer1 = LinearLayer(nin = input_size, nout = hidden_size, initializer = weight_initializer)
-        activation_layer_1 = get_activation_function(config.activation)
-        layers = [hidden_layer1, activation_layer_1]
+
+        layers.append(LinearLayer(nin = input_size, nout = hidden_size, initializer = weight_initializer))
+        layers.append(get_activation_function(config.activation))
 
         for _ in range(config.num_layers - 1):
             layers.append(LinearLayer(nin = hidden_size, nout = hidden_size, initializer = weight_initializer))
             layers.append(get_activation_function(config.activation))
 
-        output_layer = LinearLayer(nin = hidden_size, nout = output_size, initializer = weight_initializer)
-        output_activation = get_activation_function("softmax")
-        layers.append(output_layer)
-        layers.append(output_activation)
+        layers.append(LinearLayer(nin = hidden_size, nout = output_size, initializer = weight_initializer))
+        layers.append(get_activation_function("softmax"))
 
 
         # Initialize loss function
@@ -89,6 +83,10 @@ def sweep_hyperparameters(config = None):
         
         # Training Loop
         for epoch in range(config.epochs):
+            losses = []
+            correct = 0
+            total = 0
+
             for data, labels in train_dataloader:
                 # Forward pass
                 predictions = model.forward(data)
@@ -96,18 +94,28 @@ def sweep_hyperparameters(config = None):
                 # Compute loss
                 loss_value = model.loss(predictions, labels)
                 
+
+                # Only needed for Nesterov Accelerated Gradient Descent
+                if config.optimizer == "nag":
+                    optimizer.apply_lookahead()
+
                 # Backward pass
                 model.backward()
                 
                 # Update parameters
                 optimizer.step(model.gradients())
 
+                losses.append(loss_value)
+                correct += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
+                total += data.shape[0]
+
         
             # Evaluate on train data
-            loss, accuracy = evaluate(model, train_dataloader)
+            loss, accuracy = np.mean(losses), correct/total
+            print(f"Epoch {epoch + 1: 4}:      Training Loss - {loss : 10.5f}   &   Training Accuracy - {accuracy: 10.5f}")
 
             # Evaluate on val data
-            val_loss, val_accuracy = evaluate(model, val_dataloader)
+            val_loss, val_accuracy = evaluate(model, X_val, y_val)
 
             # Log the evaluation metrics
             wandb.log({
@@ -124,14 +132,14 @@ if __name__ == "__main__":
     sweep_config = {"method": "random",
                     "metric": {"name": "val_accuracy", "goal": "maximize"},
                     "parameters": {
-                        "epochs": {"values": [5, 10]},
+                        "epochs": {"values": [10]},
                         "num_layers": {"values": [3, 4, 5]},
                         "hidden_size": {"values": [32, 64, 128]},
                         "weight_decay": {"values": [0, 0.0005, 0.5]},
-                        "learning_rate": {"values": [1e-3, 1e-4]},
-                        "optimizer": {"values": ["sgd", "momentum"]},
+                        "learning_rate": {"values": [1e-1, 1e-2, 1e-3, 1e-4]},
+                        "optimizer": {"values": ["sgd", "momentum", "nag", "rmsprop"]},
                         "batch_size": {"values": [16, 32, 64]},
-                        "weight_init": {"values": ["random"]},
+                        "weight_init": {"values": ["random", "Xavier"]},
                         "activation": {"values": ["sigmoid", "tanh", "ReLU"]},
                         "dataset": {"values": ["fashion_mnist"]},
                         "loss": {"values": ["cross_entropy"]}

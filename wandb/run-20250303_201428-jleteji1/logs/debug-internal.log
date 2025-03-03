@@ -1,0 +1,16 @@
+{"time":"2025-03-03T20:14:28.7939761+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250303_201428-jleteji1\\logs\\debug-core.log"}
+{"time":"2025-03-03T20:14:28.9179856+05:30","level":"INFO","msg":"created new stream","id":"jleteji1"}
+{"time":"2025-03-03T20:14:28.9179856+05:30","level":"INFO","msg":"stream: started","id":"jleteji1"}
+{"time":"2025-03-03T20:14:28.9179856+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:14:28.9179856+05:30","level":"INFO","msg":"sender: started","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:14:28.9179856+05:30","level":"INFO","msg":"handler: started","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:14:29.362365+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-03T20:15:28.7771814+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-03T20:15:28.7779947+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-03T20:15:29.7803709+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.1920014,"progress":"1.0KB/1.0KB"}],"total_operations":1}}
+{"time":"2025-03-03T20:15:29.957503+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-03T20:15:31.3594541+05:30","level":"INFO","msg":"stream: closing","id":"jleteji1"}
+{"time":"2025-03-03T20:15:31.3594541+05:30","level":"INFO","msg":"handler: closed","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:15:31.3594541+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:15:31.3594541+05:30","level":"INFO","msg":"sender: closed","stream_id":"jleteji1"}
+{"time":"2025-03-03T20:15:31.3594541+05:30","level":"INFO","msg":"stream: closed","id":"jleteji1"}

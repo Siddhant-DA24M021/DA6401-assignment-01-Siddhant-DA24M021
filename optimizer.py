@@ -33,13 +33,17 @@ class NesterovAccGD:
         self.learning_rate = learning_rate
         self.momentum = momentum
         self.u = [np.zeros_like(param) for param in parameters]
-        self.prev_parameters = [param.copy() for param in parameters]
+        
+
+    def apply_lookahead(self):
+        for i, parameter in enumerate(self.parameters):
+            parameter -= self.learning_rate * self.momentum * self.u[i]
 
     def step(self, gradients):
-        # This need some update, currently it is momentumgd
         for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
-            self.u[i] = self.momentum * self.u[i] + self.learning_rate * grad
-            parameter -= self.u[i]
+            parameter += self.learning_rate * self.momentum * self.u[i] # restore original parameters (Undo lookahead)
+            self.u[i] = self.momentum * self.u[i] + grad
+            parameter -= self.learning_rate * self.u[i]
 
 # RMSProp
 class RMSProp():

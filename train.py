@@ -62,7 +62,7 @@ def main():
     weight_initializer = get_initializer(args.weight_init)
     layers = []
 
-    # Input Layer
+    # Hidden Layer 1
     layers.append(LinearLayer(nin = input_size, nout = hidden_size, initializer = weight_initializer))
     layers.append(get_activation_function(args.activation))
 
@@ -109,14 +109,18 @@ def main():
             
             # Compute loss
             loss_value = model.loss(predictions, labels)
+
+            # Only needed for Nesterov Accelerated Gradient Descent
+            if args.optimizer == "nag":
+                optimizer.apply_lookahead()
             
-            # Backward pass
+            # Backward pass (Backpropagation)
             model.backward()
             
             # Update parameters
             optimizer.step(model.gradients())
-            losses.append(loss_value)
 
+            losses.append(loss_value)
             correct += np.sum(np.argmax(predictions, axis = 1) == np.argmax(labels, axis = 1))
             total += data.shape[0]
 
