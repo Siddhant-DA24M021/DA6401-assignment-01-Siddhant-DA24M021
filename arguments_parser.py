@@ -10,7 +10,7 @@ def parse_arguments():
     parser.add_argument("-we", "--wandb_entity", type = str, default = "da24m021-indian-institute-of-technology-madras", help="Wandb Entity used to track experiments in the Weights & Biases dashboard.")
     parser.add_argument("-d", "--dataset", type = str, choices = ["mnist", "fashion_mnist"], default = "fashion_mnist", help = "Dataset to use")
     parser.add_argument("-e", "--epochs", type = int, default = 10, help = "Number of epochs to train neural network.")
-    parser.add_argument("-b", "--batch_size", type = int, default = 4, help = "Batch size used to train neural network.")
+    parser.add_argument("-b", "--batch_size", type = int, default = 32, help = "Batch size used to train neural network.")
     parser.add_argument("-l", "--loss", type = str, choices = ["mean_squared_error", "cross_entropy"], default = "cross_entropy", help = "Loss function")
     parser.add_argument("-o", "--optimizer", type = str, choices = ["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"], default = "sgd", help = "Optimizer")
     parser.add_argument("-lr", "--learning_rate", type = float, default = 0.01, help = "Learning rate used to optimize model parameters")

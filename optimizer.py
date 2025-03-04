@@ -57,7 +57,7 @@ class RMSProp():
     def step(self, gradients):
         for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
             self.u[i] = self.beta * self.u[i] + (1 - self.beta) * grad**2
-            effective_lr = self.learning_rate / (self.u[i] + self.epsilon)**0.5
+            effective_lr = self.learning_rate / np.sqrt(self.u[i] + self.epsilon)
             parameter -= effective_lr * grad
 
 # Adam

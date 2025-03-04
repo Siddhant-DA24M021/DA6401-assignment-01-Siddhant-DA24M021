@@ -1,0 +1,16 @@
+{"time":"2025-03-04T18:37:10.1379695+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250304_183710-8en7lts8\\logs\\debug-core.log"}
+{"time":"2025-03-04T18:37:11.7780892+05:30","level":"INFO","msg":"created new stream","id":"8en7lts8"}
+{"time":"2025-03-04T18:37:11.7788768+05:30","level":"INFO","msg":"handler: started","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:37:11.7788768+05:30","level":"INFO","msg":"stream: started","id":"8en7lts8"}
+{"time":"2025-03-04T18:37:11.7788768+05:30","level":"INFO","msg":"sender: started","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:37:11.7788768+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:37:12.2350059+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T18:38:24.2444375+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T18:38:24.2448937+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T18:38:25.2640447+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-8en7lts8-PredictionSamples","runtime_seconds":1.8450221},{"desc":"uploading artifact run-8en7lts8-TestDataConfusionMatrix_table","runtime_seconds":1.0269878},{"desc":"uploading media\\table\\Test Data Confusion Matrix_table_12_da6b70c9bceb49fb9ca3.table.json","runtime_seconds":0.6496292,"progress":"2.9KB/2.9KB"},{"desc":"uploading output.log","runtime_seconds":0.6496292,"progress":"1008B/1008B"}],"total_operations":4}}
+{"time":"2025-03-04T18:38:30.1680139+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T18:38:32.5587119+05:30","level":"INFO","msg":"stream: closing","id":"8en7lts8"}
+{"time":"2025-03-04T18:38:32.5587119+05:30","level":"INFO","msg":"handler: closed","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:38:32.5587119+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:38:32.5587119+05:30","level":"INFO","msg":"sender: closed","stream_id":"8en7lts8"}
+{"time":"2025-03-04T18:38:32.5592265+05:30","level":"INFO","msg":"stream: closed","id":"8en7lts8"}

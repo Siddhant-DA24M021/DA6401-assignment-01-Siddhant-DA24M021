@@ -1,0 +1,16 @@
+{"time":"2025-03-04T18:32:48.7865818+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250304_183248-moi9u85j\\logs\\debug-core.log"}
+{"time":"2025-03-04T18:32:50.4189608+05:30","level":"INFO","msg":"created new stream","id":"moi9u85j"}
+{"time":"2025-03-04T18:32:50.4189608+05:30","level":"INFO","msg":"stream: started","id":"moi9u85j"}
+{"time":"2025-03-04T18:32:50.4189608+05:30","level":"INFO","msg":"handler: started","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:32:50.4189608+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:32:50.4189608+05:30","level":"INFO","msg":"sender: started","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:32:50.8321931+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T18:33:50.9012325+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T18:33:51.2352308+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T18:33:51.9156178+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-moi9u85j-PredictionSamples","runtime_seconds":1.4026879},{"desc":"uploading artifact run-moi9u85j-TestDataConfusionMatrix_table","runtime_seconds":1.0181344},{"desc":"uploading output.log","runtime_seconds":0.3252339,"progress":"1008B/1008B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3252339,"progress":"2.3KB/2.3KB"},{"desc":"uploading history steps 8-12, summary, console lines 8-11","runtime_seconds":0.313099},{"desc":"uploading config.yaml","runtime_seconds":0.021023,"progress":"2.0KB/2.0KB"}],"total_operations":6}}
+{"time":"2025-03-04T18:33:54.9189392+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T18:33:56.2272327+05:30","level":"INFO","msg":"stream: closing","id":"moi9u85j"}
+{"time":"2025-03-04T18:33:56.2272327+05:30","level":"INFO","msg":"handler: closed","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:33:56.2272327+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:33:56.2272327+05:30","level":"INFO","msg":"sender: closed","stream_id":"moi9u85j"}
+{"time":"2025-03-04T18:33:56.2272327+05:30","level":"INFO","msg":"stream: closed","id":"moi9u85j"}
