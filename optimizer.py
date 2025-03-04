@@ -62,8 +62,45 @@ class RMSProp():
 
 # Adam
 class Adam():
-    pass
+    def __init__(self, parameters = None, learning_rate = 0.001, beta1 = 0.5, beta2 = 0.5, epsilon = 1e-6):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+        self.t = 1
+        self.beta1 = beta1
+        self.beta2 = beta2
+        self.epsilon = epsilon
+        self.m = [np.zeros_like(param) for param in parameters]
+        self.v = [np.zeros_like(param) for param in parameters]
+
+    def step(self, gradients):
+        for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
+            self.m[i] = self.beta1 * self.m[i] + (1 - self.beta1) * grad
+            m_hat = self.m[i] / (1 - self.beta1 ** self.t)
+            self.v[i] = self.beta2 * self.v[i] + (1 - self.beta2) * grad**2
+            v_hat = self.v[i] / (1 - self.beta2 ** self.t)
+            effective_lr = self.learning_rate / (np.sqrt(v_hat) + self.epsilon)
+            parameter -= effective_lr * m_hat
+        self.t += 1
+
 
 # Nadam
 class Nadam():
-    pass
+    def __init__(self, parameters = None, learning_rate = 0.001, beta1 = 0.5, beta2 = 0.5, epsilon = 1e-6):
+        self.parameters = parameters
+        self.learning_rate = learning_rate
+        self.t = 1
+        self.beta1 = beta1
+        self.beta2 = beta2
+        self.epsilon = epsilon
+        self.m = [np.zeros_like(param) for param in parameters]
+        self.v = [np.zeros_like(param) for param in parameters]
+
+    def step(self, gradients):
+        for i, (parameter, grad) in enumerate(zip(self.parameters, gradients)):
+            self.m[i] = self.beta1 * self.m[i] + (1 - self.beta1) * grad
+            m_hat = self.m[i] / (1 - self.beta1 ** (self.t+1))
+            self.v[i] = self.beta2 * self.v[i] + (1 - self.beta2) * grad**2
+            v_hat = self.v[i] / (1 - self.beta2 ** (self.t+1))
+            effective_lr = self.learning_rate / (np.sqrt(v_hat) + self.epsilon)
+            parameter -= effective_lr * (self.beta1 * m_hat + (1 - self.beta1) * grad / (1 - self.beta1 ** (self.t+1)))
+        self.t += 1

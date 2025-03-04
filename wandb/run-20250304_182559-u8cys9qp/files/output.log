@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\da24m021_da6401_assignment1\train.py", line 164, in <module>
+    main()
+  File "C:\da24m021_da6401_assignment1\train.py", line 88, in main
+    optimizer = get_optimizer(args.optimizer,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\da24m021_da6401_assignment1\utils.py", line 110, in get_optimizer
+    optimizer = RMSProp(parameters = model_params,
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: RMSProp.__init__() got an unexpected keyword argument 'beta1'

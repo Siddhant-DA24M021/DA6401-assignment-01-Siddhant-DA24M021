@@ -112,7 +112,7 @@ def sweep_hyperparameters(config = None):
         
             # Evaluate on train data
             loss, accuracy = np.mean(losses), correct/total
-            print(f"Epoch {epoch + 1: 4}:      Training Loss - {loss : 10.5f}   &   Training Accuracy - {accuracy: 10.5f}")
+            print(f"Epoch {epoch + 1: 4}:     Training Loss - {loss : 10.5f}   &   Training Accuracy - {accuracy: 10.5f}")
 
             # Evaluate on val data
             val_loss, val_accuracy = evaluate(model, X_val, y_val)

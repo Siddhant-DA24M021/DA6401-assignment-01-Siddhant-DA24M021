@@ -4,7 +4,7 @@ from keras.datasets import mnist, fashion_mnist
 
 
 
-# Load the dataset and plot images from each class
+# Load the dataset and plot images from each class (Support is provided for MNIST and FASHION_MNIST)
 def load_dataset(dataset_name = "fashion_mnist"):
 
     if dataset_name == "mnist": 

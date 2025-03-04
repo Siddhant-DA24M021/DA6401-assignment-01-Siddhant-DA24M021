@@ -1,0 +1,16 @@
+{"time":"2025-03-04T18:18:00.2505127+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250304_181800-fskrw71s\\logs\\debug-core.log"}
+{"time":"2025-03-04T18:18:01.8849449+05:30","level":"INFO","msg":"created new stream","id":"fskrw71s"}
+{"time":"2025-03-04T18:18:01.8856804+05:30","level":"INFO","msg":"stream: started","id":"fskrw71s"}
+{"time":"2025-03-04T18:18:01.8856804+05:30","level":"INFO","msg":"handler: started","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:18:01.8856804+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:18:01.8856804+05:30","level":"INFO","msg":"sender: started","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:18:02.3743079+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T18:19:52.1596681+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T18:19:52.1596681+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T18:19:53.1664411+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-fskrw71s-PredictionSamples","runtime_seconds":1.4213509,"subtasks":[{"desc":"media/images/d4a085ed65f708e38227.png","runtime_seconds":0.1847729,"progress":"372B/372B"},{"desc":"media/images/d590a7aee009dbed87d5.png","runtime_seconds":0.1847729,"progress":"472B/472B"},{"desc":"media/images/de633403fac2ecb8a6d0.png","runtime_seconds":0.1843675,"progress":"697B/697B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.1843675,"progress":"3.0KB/3.0KB"},{"desc":"media/images/1714d59138e1efc2c1c6.png","runtime_seconds":0.1843675,"progress":"510B/510B"},{"desc":"media/images/ca1d290dbe65e23dce8b.png","runtime_seconds":0.1843675,"progress":"840B/840B"},{"desc":"media/images/5a97f445f759f17ff11c.png","runtime_seconds":0.1843675,"progress":"555B/555B"},{"desc":"media/images/682984e1253e55d7daec.png","runtime_seconds":0.1843675,"progress":"599B/599B"},{"desc":"media/images/7853b36f87cb006b635d.png","runtime_seconds":0.1839095,"progress":"385B/385B"},{"desc":"media/images/da036d1c88df91772d09.png","runtime_seconds":0.1839095,"progress":"453B/453B"}]},{"desc":"uploading artifact run-fskrw71s-TestDataConfusionMatrix_table","runtime_seconds":1.0106336},{"desc":"uploading config.yaml","runtime_seconds":0.1659251,"progress":"2.0KB/2.0KB"}],"total_operations":3}}
+{"time":"2025-03-04T18:19:55.7247212+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T18:19:57.1016334+05:30","level":"INFO","msg":"stream: closing","id":"fskrw71s"}
+{"time":"2025-03-04T18:19:57.1016334+05:30","level":"INFO","msg":"handler: closed","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:19:57.1016334+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:19:57.1016334+05:30","level":"INFO","msg":"sender: closed","stream_id":"fskrw71s"}
+{"time":"2025-03-04T18:19:57.1021515+05:30","level":"INFO","msg":"stream: closed","id":"fskrw71s"}

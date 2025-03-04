@@ -96,18 +96,22 @@ def get_optimizer(name, model_params, **kwargs):
     elif name == "adam":
         beta1 = kwargs.pop("beta1", 0.5)
         beta2 = kwargs.pop("beta2", 0.5)
+        epsilon = kwargs.pop("epsilon", 1e-6)
         optimizer = Adam(parameters = model_params, 
                             learning_rate = learning_rate,
                             beta1 = beta1,
-                            beta2 = beta2)
+                            beta2 = beta2,
+                            epsilon = epsilon)
         
     elif name == "nadam":
         beta1 = kwargs.pop("beta1", 0.5)
         beta2 = kwargs.pop("beta2", 0.5)
-        optimizer = RMSProp(parameters = model_params, 
+        epsilon = kwargs.pop("epsilon", 1e-6)
+        optimizer = Nadam(parameters = model_params, 
                             learning_rate = learning_rate,
                             beta1 = beta1,
-                            beta2 = beta2)
+                            beta2 = beta2,
+                            epsilon = epsilon)
 
     if not optimizer:
         raise ValueError(f"Invalid optimizer name: {name}")

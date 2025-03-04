@@ -1,0 +1,16 @@
+{"time":"2025-03-04T18:26:51.9243035+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250304_182651-nf94qslr\\logs\\debug-core.log"}
+{"time":"2025-03-04T18:26:53.4541214+05:30","level":"INFO","msg":"created new stream","id":"nf94qslr"}
+{"time":"2025-03-04T18:26:53.4541214+05:30","level":"INFO","msg":"stream: started","id":"nf94qslr"}
+{"time":"2025-03-04T18:26:53.4541214+05:30","level":"INFO","msg":"handler: started","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:26:53.4541214+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:26:53.4541214+05:30","level":"INFO","msg":"sender: started","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:26:54.1734119+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-04T18:29:01.725853+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-04T18:29:01.7263593+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-04T18:29:02.7302712+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-nf94qslr-PredictionSamples","runtime_seconds":1.4274029,"subtasks":[{"desc":"media/images/f5a1f73ae429e3fda9d7.png","runtime_seconds":0.0551116,"progress":"391B/391B"},{"desc":"media/images/5010dd08a88ecfc66842.png","runtime_seconds":0.0551116,"progress":"479B/479B"},{"desc":"media/images/df83bc2948ead559f878.png","runtime_seconds":0.0551116,"progress":"395B/395B"},{"desc":"media/images/14b8948faf2492a73c82.png","runtime_seconds":0.0551116,"progress":"423B/423B"},{"desc":"media/images/1e46a3a080e92287a197.png","runtime_seconds":0.0546059,"progress":"509B/509B"},{"desc":"media/images/2ecbb0585b47ac0b14e8.png","runtime_seconds":0.0546059,"progress":"227B/227B"},{"desc":"media/images/164c48173ceedd7eb5eb.png","runtime_seconds":0.0546059,"progress":"623B/623B"},{"desc":"media/images/145b8917350d9c851bd2.png","runtime_seconds":0.0546059,"progress":"466B/466B"},{"desc":"media/images/06dff429fd9c6a651368.png","runtime_seconds":0.0546059,"progress":"600B/600B"},{"desc":"media/images/1e885d11a32c2893208d.png","runtime_seconds":0.0546059,"progress":"413B/413B"}]},{"desc":"uploading artifact run-nf94qslr-TestDataConfusionMatrix_table","runtime_seconds":1.0119832},{"desc":"uploading config.yaml","runtime_seconds":0.3795802,"progress":"2.0KB/2.0KB"}],"total_operations":3}}
+{"time":"2025-03-04T18:29:05.4659172+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-04T18:29:06.8994378+05:30","level":"INFO","msg":"stream: closing","id":"nf94qslr"}
+{"time":"2025-03-04T18:29:06.8994378+05:30","level":"INFO","msg":"handler: closed","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:29:06.8994378+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:29:06.8994378+05:30","level":"INFO","msg":"sender: closed","stream_id":"nf94qslr"}
+{"time":"2025-03-04T18:29:06.8994378+05:30","level":"INFO","msg":"stream: closed","id":"nf94qslr"}
