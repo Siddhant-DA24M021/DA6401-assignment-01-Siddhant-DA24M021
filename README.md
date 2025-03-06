@@ -61,3 +61,8 @@ python hyperparameter_tuning.py
 
 # Using the model
 python train.py --dataset fashion_mnist --epochs 10 --batch_size 128 --hidden_size 64 --num_layers 3 --activation tanh --optimizer adam --learning_rate 0.001 --loss cross_entropy --weight_init Xavier
+
+
+
+# Self Declaration
+I, Siddhant Baranwal DA24M021, swear on my honour that I have written the code and the report by myself and have not copied it from the internet or other students.
