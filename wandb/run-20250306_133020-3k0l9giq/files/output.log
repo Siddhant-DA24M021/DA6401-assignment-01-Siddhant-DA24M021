@@ -1,0 +1,18 @@
+--------------------------------------------------------------------------------------------------
+Epoch    1:      Training Loss -    2.34985   &   Training Accuracy -    0.10062
+Epoch    2:      Training Loss -    2.30183   &   Training Accuracy -    0.10895
+Epoch    3:      Training Loss -    2.30166   &   Training Accuracy -    0.10765
+Epoch    4:      Training Loss -    2.30155   &   Training Accuracy -    0.12215
+Traceback (most recent call last):
+  File "C:\da24m021_da6401_assignment1\train.py", line 164, in <module>
+    main()
+  File "C:\da24m021_da6401_assignment1\train.py", line 108, in main
+    predictions = model.forward(data)
+                  ^^^^^^^^^^^^^^^^^^^
+  File "C:\da24m021_da6401_assignment1\neuralnetwork.py", line 9, in forward
+    self.output = layer(self.output)
+                  ^^^^^^^^^^^^^^^^^^
+  File "C:\da24m021_da6401_assignment1\linearlayer.py", line 17, in __call__
+    return np.matmul(x, self.weights) + self.bias
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

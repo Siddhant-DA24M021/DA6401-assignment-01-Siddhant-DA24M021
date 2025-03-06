@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from load_dataset import load_dataset
 from dataloader import Dataloader
 from linearlayer import LinearLayer
@@ -132,13 +131,14 @@ if __name__ == "__main__":
     sweep_config = {"method": "random",
                     "metric": {"name": "val_accuracy", "goal": "maximize"},
                     "parameters": {
-                        "epochs": {"values": [10]},
+                        "dropout": {"values": [0]},
+                        "epochs": {"values": [5, 10, 15]},
                         "num_layers": {"values": [3, 4, 5]},
                         "hidden_size": {"values": [32, 64, 128]},
-                        "weight_decay": {"values": [0, 0.0005, 0.5]},
+                        "weight_decay": {"values": [0, 0.0001, 0.0005]},
                         "learning_rate": {"values": [1e-1, 1e-2, 1e-3, 1e-4]},
-                        "optimizer": {"values": ["sgd", "momentum", "nag", "rmsprop"]},
-                        "batch_size": {"values": [16, 32, 64]},
+                        "optimizer": {"values": ["sgd", "momentum", "nag", "rmsprop", "adam", "nadam"]},
+                        "batch_size": {"values": [32, 64, 128]},
                         "weight_init": {"values": ["random", "Xavier"]},
                         "activation": {"values": ["sigmoid", "tanh", "ReLU"]},
                         "dataset": {"values": ["fashion_mnist"]},
@@ -146,4 +146,4 @@ if __name__ == "__main__":
                     }}
     
     sweep_id = wandb.sweep(sweep_config, project = "da24m021_da6401_assignment1")
-    wandb.agent(sweep_id, function = sweep_hyperparameters, count = 10)
+    wandb.agent(sweep_id, function = sweep_hyperparameters, count = 100)

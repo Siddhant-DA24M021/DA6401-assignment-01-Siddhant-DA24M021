@@ -1,0 +1,16 @@
+{"time":"2025-03-06T13:55:18.1727935+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_135518-twi2r6v6\\logs\\debug-core.log"}
+{"time":"2025-03-06T13:55:19.7998364+05:30","level":"INFO","msg":"created new stream","id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:19.7998364+05:30","level":"INFO","msg":"stream: started","id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:19.7998364+05:30","level":"INFO","msg":"handler: started","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:19.7998364+05:30","level":"INFO","msg":"sender: started","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:19.7998364+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:20.2870224+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T13:55:52.3967168+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T13:55:52.3972211+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T13:55:53.4114588+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-twi2r6v6-PredictionSamples","runtime_seconds":1.375403,"subtasks":[{"desc":"Prediction Samples.table.json","runtime_seconds":0.0492859,"progress":"3.0KB/3.0KB"},{"desc":"media/images/aa2537e6db41a0449fd7.png","runtime_seconds":0.0492859,"progress":"456B/456B"},{"desc":"media/images/fe6a3e15cd7d872c763d.png","runtime_seconds":0.0487768,"progress":"514B/514B"},{"desc":"media/images/4f052bd1a8264b5b48f8.png","runtime_seconds":0.0487768,"progress":"390B/390B"},{"desc":"media/images/93e68da330ebd09030ac.png","runtime_seconds":0.0487768,"progress":"469B/469B"},{"desc":"media/images/20334d5c72701e4587fb.png","runtime_seconds":0.0487768,"progress":"565B/565B"},{"desc":"media/images/b449258cadec84ae99ef.png","runtime_seconds":0.0487768,"progress":"379B/379B"},{"desc":"media/images/a843115ce2d2c229d405.png","runtime_seconds":0.0487768,"progress":"623B/623B"},{"desc":"media/images/b4123f5e7714c1277113.png","runtime_seconds":0.0487768,"progress":"596B/596B"},{"desc":"media/images/59716f788268a859aece.png","runtime_seconds":0.0487768,"progress":"557B/557B"}]},{"desc":"uploading artifact run-twi2r6v6-TestDataConfusionMatrix_table","runtime_seconds":1.0197578},{"desc":"uploading output.log","runtime_seconds":0.6902113,"progress":"1008B/1008B"},{"desc":"uploading config.yaml","runtime_seconds":0.3600149,"progress":"2.0KB/2.0KB"}],"total_operations":4}}
+{"time":"2025-03-06T13:55:57.0337145+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T13:55:58.3625402+05:30","level":"INFO","msg":"stream: closing","id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:58.3625402+05:30","level":"INFO","msg":"handler: closed","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:58.3625402+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:58.3625402+05:30","level":"INFO","msg":"sender: closed","stream_id":"twi2r6v6"}
+{"time":"2025-03-06T13:55:58.3625402+05:30","level":"INFO","msg":"stream: closed","id":"twi2r6v6"}

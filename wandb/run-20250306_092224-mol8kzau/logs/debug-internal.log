@@ -1,0 +1,16 @@
+{"time":"2025-03-06T09:22:24.3214302+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_092224-mol8kzau\\logs\\debug-core.log"}
+{"time":"2025-03-06T09:22:25.9540622+05:30","level":"INFO","msg":"created new stream","id":"mol8kzau"}
+{"time":"2025-03-06T09:22:25.9548163+05:30","level":"INFO","msg":"stream: started","id":"mol8kzau"}
+{"time":"2025-03-06T09:22:25.9548163+05:30","level":"INFO","msg":"handler: started","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:22:25.9548163+05:30","level":"INFO","msg":"sender: started","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:22:25.9548163+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:22:26.3549965+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T09:22:57.6780511+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T09:22:57.6785732+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T09:22:58.6930134+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-mol8kzau-PredictionSamples","runtime_seconds":1.3656729,"subtasks":[{"desc":"media/images/e313eeb5436df2ca8807.png","runtime_seconds":0.2220387,"progress":"386B/386B"},{"desc":"media/images/e529208996225c0495e3.png","runtime_seconds":0.2220387,"progress":"571B/571B"},{"desc":"media/images/1f35c47b29276dc3ec76.png","runtime_seconds":0.2220387,"progress":"524B/524B"},{"desc":"media/images/fbcd8b14d83d085a6748.png","runtime_seconds":0.2220387,"progress":"682B/682B"},{"desc":"media/images/5f355feb982ab27b43bd.png","runtime_seconds":0.2215343,"progress":"458B/458B"},{"desc":"media/images/7aca7c2d3c98557859e0.png","runtime_seconds":0.2215343,"progress":"506B/506B"},{"desc":"media/images/cd0b0b26073f3df71263.png","runtime_seconds":0.2215343,"progress":"561B/561B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.2215343,"progress":"3.0KB/3.0KB"},{"desc":"media/images/42be742fb9310ded1f0d.png","runtime_seconds":0.2215343,"progress":"239B/239B"},{"desc":"media/images/0acb9b1279b5fad86f5a.png","runtime_seconds":0.2215343,"progress":"421B/421B"}]},{"desc":"uploading artifact run-mol8kzau-TestDataConfusionMatrix_table","runtime_seconds":1.0217735000000001},{"desc":"uploading config.yaml","runtime_seconds":0.3741709,"progress":"2.0KB/2.0KB"}],"total_operations":3}}
+{"time":"2025-03-06T09:23:01.5577668+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T09:23:02.9407797+05:30","level":"INFO","msg":"stream: closing","id":"mol8kzau"}
+{"time":"2025-03-06T09:23:02.9407797+05:30","level":"INFO","msg":"handler: closed","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:23:02.9407797+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:23:02.9407797+05:30","level":"INFO","msg":"sender: closed","stream_id":"mol8kzau"}
+{"time":"2025-03-06T09:23:02.9407797+05:30","level":"INFO","msg":"stream: closed","id":"mol8kzau"}

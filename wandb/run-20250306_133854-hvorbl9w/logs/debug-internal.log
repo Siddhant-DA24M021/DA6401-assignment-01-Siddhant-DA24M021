@@ -1,0 +1,16 @@
+{"time":"2025-03-06T13:38:54.3991333+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_133854-hvorbl9w\\logs\\debug-core.log"}
+{"time":"2025-03-06T13:38:56.0337955+05:30","level":"INFO","msg":"created new stream","id":"hvorbl9w"}
+{"time":"2025-03-06T13:38:56.0337955+05:30","level":"INFO","msg":"stream: started","id":"hvorbl9w"}
+{"time":"2025-03-06T13:38:56.0337955+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:38:56.0337955+05:30","level":"INFO","msg":"sender: started","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:38:56.0344269+05:30","level":"INFO","msg":"handler: started","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:38:56.4963455+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T13:39:36.2005148+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T13:39:36.2013892+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T13:39:37.2157101+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-hvorbl9w-PredictionSamples","runtime_seconds":1.4094539,"subtasks":[{"desc":"media/images/aa2537e6db41a0449fd7.png","runtime_seconds":0.223901,"progress":"456B/456B"},{"desc":"media/images/b4123f5e7714c1277113.png","runtime_seconds":0.223901,"progress":"596B/596B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.223901,"progress":"3.0KB/3.0KB"},{"desc":"media/images/20334d5c72701e4587fb.png","runtime_seconds":0.223901,"progress":"565B/565B"},{"desc":"media/images/b449258cadec84ae99ef.png","runtime_seconds":0.2233953,"progress":"379B/379B"},{"desc":"media/images/fe6a3e15cd7d872c763d.png","runtime_seconds":0.2233953,"progress":"514B/514B"},{"desc":"media/images/172e725a0b34c3130b1b.png","runtime_seconds":0.2233953,"progress":"528B/528B"},{"desc":"media/images/4f052bd1a8264b5b48f8.png","runtime_seconds":0.2233953,"progress":"390B/390B"},{"desc":"media/images/59716f788268a859aece.png","runtime_seconds":0.2233953,"progress":"557B/557B"},{"desc":"media/images/a843115ce2d2c229d405.png","runtime_seconds":0.2233953,"progress":"623B/623B"}]},{"desc":"uploading artifact run-hvorbl9w-TestDataConfusionMatrix_table","runtime_seconds":1.0217354}],"total_operations":2}}
+{"time":"2025-03-06T13:39:39.854757+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T13:39:41.1992882+05:30","level":"INFO","msg":"stream: closing","id":"hvorbl9w"}
+{"time":"2025-03-06T13:39:41.1992882+05:30","level":"INFO","msg":"handler: closed","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:39:41.1992882+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:39:41.1992882+05:30","level":"INFO","msg":"sender: closed","stream_id":"hvorbl9w"}
+{"time":"2025-03-06T13:39:41.1992882+05:30","level":"INFO","msg":"stream: closed","id":"hvorbl9w"}

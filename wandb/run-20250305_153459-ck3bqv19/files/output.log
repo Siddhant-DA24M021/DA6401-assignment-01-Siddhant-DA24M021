@@ -1,0 +1,11 @@
+Epoch    1:     Training Loss -    7.41084   &   Training Accuracy -    0.13089
+Epoch    2:     Training Loss -    5.52535   &   Training Accuracy -    0.15765
+Epoch    3:     Training Loss -    4.58302   &   Training Accuracy -    0.19608
+Epoch    4:     Training Loss -    4.04741   &   Training Accuracy -    0.23036
+Epoch    5:     Training Loss -    3.68316   &   Training Accuracy -    0.25506
+Epoch    6:     Training Loss -    3.41468   &   Training Accuracy -    0.27617
+Epoch    7:     Training Loss -    3.19961   &   Training Accuracy -    0.29536
+Epoch    8:     Training Loss -    3.01790   &   Training Accuracy -    0.31008
+Epoch    9:     Training Loss -    2.87170   &   Training Accuracy -    0.32277
+[34m[1mwandb[0m: Network error (ConnectionError), entering retry loop.
+Epoch   10:     Training Loss -    2.75719   &   Training Accuracy -    0.33291

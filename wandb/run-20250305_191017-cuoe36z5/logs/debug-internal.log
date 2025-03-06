@@ -1,0 +1,16 @@
+{"time":"2025-03-05T19:10:18.0179111+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250305_191017-cuoe36z5\\logs\\debug-core.log"}
+{"time":"2025-03-05T19:10:19.7723604+05:30","level":"INFO","msg":"created new stream","id":"cuoe36z5"}
+{"time":"2025-03-05T19:10:19.7723604+05:30","level":"INFO","msg":"stream: started","id":"cuoe36z5"}
+{"time":"2025-03-05T19:10:19.7723604+05:30","level":"INFO","msg":"handler: started","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:10:19.7723604+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:10:19.7723604+05:30","level":"INFO","msg":"sender: started","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:10:20.3854145+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T19:11:08.3144988+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T19:11:08.3166866+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T19:11:09.3300778+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-cuoe36z5-PredictionSamples","runtime_seconds":1.5523126,"subtasks":[{"desc":"media/images/dd2b3749eb9b419ae832.png","runtime_seconds":0.2170247,"progress":"357B/357B"},{"desc":"media/images/5905a453ff1d6878b19d.png","runtime_seconds":0.2170247,"progress":"538B/538B"},{"desc":"media/images/ae33b6b04402fcb77fe2.png","runtime_seconds":0.2170247,"progress":"415B/415B"},{"desc":"media/images/b02ece956556880b34d2.png","runtime_seconds":0.2170247,"progress":"405B/405B"},{"desc":"media/images/968b93c4b60eee2401ec.png","runtime_seconds":0.2170247,"progress":"538B/538B"},{"desc":"media/images/ed29ea54c68c6d64c4c3.png","runtime_seconds":0.2170247,"progress":"647B/647B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.2164113,"progress":"3.0KB/3.0KB"},{"desc":"media/images/6d111a19e548891efd83.png","runtime_seconds":0.2164113,"progress":"555B/555B"},{"desc":"media/images/c658e3b517b10f02537f.png","runtime_seconds":0.2164113,"progress":"511B/511B"},{"desc":"media/images/812723babae5bfa4cc77.png","runtime_seconds":0.2164113,"progress":"571B/571B"}]},{"desc":"uploading artifact run-cuoe36z5-TestDataConfusionMatrix_table","runtime_seconds":1.0260668},{"desc":"uploading config.yaml","runtime_seconds":0.311912,"progress":"2.0KB/2.0KB"}],"total_operations":3}}
+{"time":"2025-03-05T19:11:12.8623766+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T19:11:14.334073+05:30","level":"INFO","msg":"stream: closing","id":"cuoe36z5"}
+{"time":"2025-03-05T19:11:14.334073+05:30","level":"INFO","msg":"handler: closed","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:11:14.334073+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:11:14.334073+05:30","level":"INFO","msg":"sender: closed","stream_id":"cuoe36z5"}
+{"time":"2025-03-05T19:11:14.334073+05:30","level":"INFO","msg":"stream: closed","id":"cuoe36z5"}

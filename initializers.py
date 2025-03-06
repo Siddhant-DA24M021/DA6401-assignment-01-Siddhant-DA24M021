@@ -6,6 +6,7 @@ class RandomUniformInitializer:
         self.upper = upper
 
     def weightsandbiases(self, nin, nout):
+        np.random.seed(42)
         weights = np.random.uniform(self.lower, self.upper, (nin, nout))
         biases = np.random.uniform(self.lower, self.upper, (1, nout))
         return weights, biases
@@ -17,6 +18,7 @@ class RandomNormalInitializer:
         self.sigma = sigma
 
     def weightsandbiases(self, nin, nout):
+        np.random.seed(42)
         weights = np.random.normal(self.mu, self.sigma, (nin, nout))
         biases = np.random.normal(self.mu, self.sigma, (1, nout))
         return weights, biases
@@ -24,6 +26,7 @@ class RandomNormalInitializer:
     
 class XavierInitializer:
     def weightsandbiases(self, nin, nout):
+        np.random.seed(42)
         x = np.sqrt(6 / (nin + nout))
         weights = np.random.uniform(-x, x, (nin, nout))
         biases = np.random.uniform(-x, x, (1, nout))

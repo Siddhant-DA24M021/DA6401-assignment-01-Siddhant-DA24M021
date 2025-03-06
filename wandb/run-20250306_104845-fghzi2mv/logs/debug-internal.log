@@ -1,0 +1,16 @@
+{"time":"2025-03-06T10:48:45.4209828+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_104845-fghzi2mv\\logs\\debug-core.log"}
+{"time":"2025-03-06T10:48:46.044706+05:30","level":"INFO","msg":"created new stream","id":"fghzi2mv"}
+{"time":"2025-03-06T10:48:46.044706+05:30","level":"INFO","msg":"stream: started","id":"fghzi2mv"}
+{"time":"2025-03-06T10:48:46.0453132+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:48:46.045876+05:30","level":"INFO","msg":"handler: started","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:48:46.045876+05:30","level":"INFO","msg":"sender: started","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:48:46.4543619+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T10:49:25.9619881+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T10:49:25.9629744+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T10:49:26.9780985+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.6911404,"progress":"1002B/1002B"},{"desc":"uploading config.yaml","runtime_seconds":0.3558111,"progress":"1.1KB/1.1KB"}],"total_operations":2}}
+{"time":"2025-03-06T10:49:27.6193709+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T10:49:29.0049394+05:30","level":"INFO","msg":"stream: closing","id":"fghzi2mv"}
+{"time":"2025-03-06T10:49:29.0049394+05:30","level":"INFO","msg":"handler: closed","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:49:29.0049394+05:30","level":"INFO","msg":"sender: closed","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:49:29.0049394+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"fghzi2mv"}
+{"time":"2025-03-06T10:49:29.0049394+05:30","level":"INFO","msg":"stream: closed","id":"fghzi2mv"}

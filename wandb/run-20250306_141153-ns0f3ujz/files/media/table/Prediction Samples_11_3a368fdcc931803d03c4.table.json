@@ -1,0 +1,1 @@
+{"columns": ["Image", "True Label", "Predicted Label"], "data": [["Image", "Sandal", "Sandal"], ["Image", "Dress", "Dress"], ["Image", "Coat", "Coat"], ["Image", "Trouser", "Trouser"], ["Image", "Pullover", "Pullover"], ["Image", "T-shirt/top", "Shirt"], ["Image", "Trouser", "Trouser"], ["Image", "Ankle boot", "Ankle boot"], ["Image", "Coat", "Coat"], ["Image", "Coat", "Coat"]]}

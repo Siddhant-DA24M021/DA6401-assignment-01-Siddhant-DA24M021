@@ -11,6 +11,7 @@ def train_val_split(X, y, val_ratio = 0.1):
     val_size = int(num_samples * val_ratio)
 
     indices = np.arange(num_samples)
+    np.random.seed(42)
     np.random.shuffle(indices)
 
     train_indices = indices[val_size:]
@@ -68,22 +69,26 @@ def get_optimizer(name, model_params, **kwargs):
 
     optimizer = None
     learning_rate =  kwargs.pop("learning_rate", 0.001)
+    weight_decay =  kwargs.pop("weight_decay", 0.0001)
 
     if name == "sgd":
         optimizer = SGD(parameters = model_params, 
-                        learning_rate = learning_rate)
+                        learning_rate = learning_rate,
+                        weight_decay = weight_decay)
         
     elif name == "momentum":
         momentum = kwargs.pop("momentum", 0.5)
         optimizer = MomentumGD(parameters = model_params, 
                                learning_rate = learning_rate, 
-                               momentum = momentum)
+                               momentum = momentum,
+                               weight_decay = weight_decay)
         
     elif name == "nag":
         momentum = kwargs.pop("momentum", 0.5)
         optimizer = NesterovAccGD(parameters = model_params, 
                                   learning_rate = learning_rate, 
-                                  momentum = momentum)
+                                  momentum = momentum,
+                                  weight_decay = weight_decay)
         
     elif name == "rmsprop":
         beta = kwargs.pop("beta", 0.5)
@@ -91,27 +96,30 @@ def get_optimizer(name, model_params, **kwargs):
         optimizer = RMSProp(parameters = model_params, 
                             learning_rate = learning_rate,
                             beta = beta,
-                            epsilon = epsilon)
+                            epsilon = epsilon,
+                            weight_decay = weight_decay)
         
     elif name == "adam":
-        beta1 = kwargs.pop("beta1", 0.5)
-        beta2 = kwargs.pop("beta2", 0.5)
+        beta1 = kwargs.pop("beta1", 0.9)
+        beta2 = kwargs.pop("beta2", 0.999)
         epsilon = kwargs.pop("epsilon", 1e-6)
         optimizer = Adam(parameters = model_params, 
                             learning_rate = learning_rate,
                             beta1 = beta1,
                             beta2 = beta2,
-                            epsilon = epsilon)
+                            epsilon = epsilon,
+                            weight_decay = weight_decay)
         
     elif name == "nadam":
-        beta1 = kwargs.pop("beta1", 0.5)
-        beta2 = kwargs.pop("beta2", 0.5)
+        beta1 = kwargs.pop("beta1", 0.9)
+        beta2 = kwargs.pop("beta2", 0.999)
         epsilon = kwargs.pop("epsilon", 1e-6)
         optimizer = Nadam(parameters = model_params, 
                             learning_rate = learning_rate,
                             beta1 = beta1,
                             beta2 = beta2,
-                            epsilon = epsilon)
+                            epsilon = epsilon,
+                            weight_decay = weight_decay)
 
     if not optimizer:
         raise ValueError(f"Invalid optimizer name: {name}")

@@ -1,0 +1,12 @@
+--------------------------------------------------------------------------------------------------
+Epoch    1:      Training Loss -    0.53801   &   Training Accuracy -    0.81441
+Epoch    2:      Training Loss -    0.37901   &   Training Accuracy -    0.86340
+Epoch    3:      Training Loss -    0.34158   &   Training Accuracy -    0.87505
+Epoch    4:      Training Loss -    0.32221   &   Training Accuracy -    0.88088
+Epoch    5:      Training Loss -    0.30498   &   Training Accuracy -    0.88783
+Epoch    6:      Training Loss -    0.28941   &   Training Accuracy -    0.89213
+Epoch    7:      Training Loss -    0.27892   &   Training Accuracy -    0.89703
+Epoch    8:      Training Loss -    0.26743   &   Training Accuracy -    0.90153
+Epoch    9:      Training Loss -    0.25798   &   Training Accuracy -    0.90312
+Epoch   10:      Training Loss -    0.25035   &   Training Accuracy -    0.90692
+--------------------------------------------------------------------------------------------------

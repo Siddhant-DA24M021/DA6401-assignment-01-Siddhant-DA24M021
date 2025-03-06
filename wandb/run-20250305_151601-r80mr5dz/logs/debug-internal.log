@@ -1,0 +1,16 @@
+{"time":"2025-03-05T15:16:01.9833955+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250305_151601-r80mr5dz\\logs\\debug-core.log"}
+{"time":"2025-03-05T15:16:02.6288306+05:30","level":"INFO","msg":"created new stream","id":"r80mr5dz"}
+{"time":"2025-03-05T15:16:02.6288306+05:30","level":"INFO","msg":"stream: started","id":"r80mr5dz"}
+{"time":"2025-03-05T15:16:02.6288306+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:16:02.6296574+05:30","level":"INFO","msg":"sender: started","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:16:02.6296574+05:30","level":"INFO","msg":"handler: started","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:16:03.0030533+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T15:17:05.0795781+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T15:17:05.0815018+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T15:17:06.1023413+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.4129066,"progress":"800B/800B"},{"desc":"uploading config.yaml","runtime_seconds":0.1078461,"progress":"1.0KB/1.0KB"}],"total_operations":2}}
+{"time":"2025-03-05T15:17:06.9933859+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T15:17:08.3175924+05:30","level":"INFO","msg":"stream: closing","id":"r80mr5dz"}
+{"time":"2025-03-05T15:17:08.3175924+05:30","level":"INFO","msg":"handler: closed","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:17:08.3175924+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:17:08.3263456+05:30","level":"INFO","msg":"sender: closed","stream_id":"r80mr5dz"}
+{"time":"2025-03-05T15:17:08.3263456+05:30","level":"INFO","msg":"stream: closed","id":"r80mr5dz"}

@@ -1,0 +1,16 @@
+{"time":"2025-03-06T11:01:22.5317077+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_110122-mozlgzih\\logs\\debug-core.log"}
+{"time":"2025-03-06T11:01:23.0580655+05:30","level":"INFO","msg":"created new stream","id":"mozlgzih"}
+{"time":"2025-03-06T11:01:23.0580655+05:30","level":"INFO","msg":"stream: started","id":"mozlgzih"}
+{"time":"2025-03-06T11:01:23.0580655+05:30","level":"INFO","msg":"handler: started","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:01:23.0580655+05:30","level":"INFO","msg":"sender: started","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:01:23.0580655+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:01:23.5519349+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T11:02:25.6960882+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T11:02:25.6972237+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T11:02:26.7131179+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.0599166,"progress":"1.1KB/1.1KB"}],"total_operations":1}}
+{"time":"2025-03-06T11:02:27.0171146+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T11:02:28.4360957+05:30","level":"INFO","msg":"stream: closing","id":"mozlgzih"}
+{"time":"2025-03-06T11:02:28.4360957+05:30","level":"INFO","msg":"handler: closed","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:02:28.4360957+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:02:28.4360957+05:30","level":"INFO","msg":"sender: closed","stream_id":"mozlgzih"}
+{"time":"2025-03-06T11:02:28.4360957+05:30","level":"INFO","msg":"stream: closed","id":"mozlgzih"}

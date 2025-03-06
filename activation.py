@@ -47,8 +47,7 @@ class Sigmoid:
         self.output = None
     
     def __call__(self, x):
-        # Clipping x values for numerical stability
-        self.output = 1 / (1 + np.exp(-np.clip(x, -100, 100)))
+        self.output = 1 / (1 + np.exp(-1 * np.clip(x, -500, 500)))
         return self.output
     
     def backward(self, grad_output):

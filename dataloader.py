@@ -10,12 +10,14 @@ class Dataloader:
         self.n_samples = X.shape[0]
         self.indices = np.arange(self.n_samples)
         if self.shuffle:
+            np.random.seed(42)
             np.random.shuffle(self.indices)
 
         
     def __iter__(self):
         self.current_index = 0
         if self.shuffle:
+            np.random.seed(42)
             np.random.shuffle(self.indices)
         return self
     

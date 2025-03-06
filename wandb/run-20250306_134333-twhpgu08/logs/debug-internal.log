@@ -1,0 +1,16 @@
+{"time":"2025-03-06T13:43:33.7978908+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250306_134333-twhpgu08\\logs\\debug-core.log"}
+{"time":"2025-03-06T13:43:35.4332115+05:30","level":"INFO","msg":"created new stream","id":"twhpgu08"}
+{"time":"2025-03-06T13:43:35.4338719+05:30","level":"INFO","msg":"handler: started","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:43:35.4338719+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:43:35.4338719+05:30","level":"INFO","msg":"sender: started","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:43:35.4338719+05:30","level":"INFO","msg":"stream: started","id":"twhpgu08"}
+{"time":"2025-03-06T13:43:35.8438263+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-06T13:44:09.2711714+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-06T13:44:09.2722061+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-06T13:44:10.2748134+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-twhpgu08-PredictionSamples","runtime_seconds":1.3986207,"subtasks":[{"desc":"media/images/fe6a3e15cd7d872c763d.png","runtime_seconds":0.2167791,"progress":"514B/514B"},{"desc":"media/images/20334d5c72701e4587fb.png","runtime_seconds":0.2167791,"progress":"565B/565B"},{"desc":"media/images/172e725a0b34c3130b1b.png","runtime_seconds":0.2162734,"progress":"528B/528B"},{"desc":"media/images/59716f788268a859aece.png","runtime_seconds":0.2162734,"progress":"557B/557B"},{"desc":"media/images/b4123f5e7714c1277113.png","runtime_seconds":0.2162734,"progress":"596B/596B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.2162734,"progress":"3.0KB/3.0KB"},{"desc":"media/images/4f052bd1a8264b5b48f8.png","runtime_seconds":0.2162734,"progress":"390B/390B"},{"desc":"media/images/a843115ce2d2c229d405.png","runtime_seconds":0.2162734,"progress":"623B/623B"},{"desc":"media/images/aa2537e6db41a0449fd7.png","runtime_seconds":0.2157162,"progress":"456B/456B"},{"desc":"media/images/b449258cadec84ae99ef.png","runtime_seconds":0.2157162,"progress":"379B/379B"}]},{"desc":"uploading artifact run-twhpgu08-TestDataConfusionMatrix_table","runtime_seconds":1.016964},{"desc":"uploading config.yaml","runtime_seconds":0.3461259,"progress":"2.0KB/2.0KB"}],"total_operations":3}}
+{"time":"2025-03-06T13:44:12.8760958+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-06T13:44:14.302572+05:30","level":"INFO","msg":"stream: closing","id":"twhpgu08"}
+{"time":"2025-03-06T13:44:14.302572+05:30","level":"INFO","msg":"handler: closed","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:44:14.302572+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:44:14.302572+05:30","level":"INFO","msg":"sender: closed","stream_id":"twhpgu08"}
+{"time":"2025-03-06T13:44:14.302572+05:30","level":"INFO","msg":"stream: closed","id":"twhpgu08"}

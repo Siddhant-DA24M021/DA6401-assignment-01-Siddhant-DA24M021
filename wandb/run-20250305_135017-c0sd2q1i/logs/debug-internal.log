@@ -1,0 +1,18 @@
+{"time":"2025-03-05T13:50:17.347822+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250305_135017-c0sd2q1i\\logs\\debug-core.log"}
+{"time":"2025-03-05T13:50:19.0954768+05:30","level":"INFO","msg":"created new stream","id":"c0sd2q1i"}
+{"time":"2025-03-05T13:50:19.0954768+05:30","level":"INFO","msg":"stream: started","id":"c0sd2q1i"}
+{"time":"2025-03-05T13:50:19.0954768+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:50:19.0954768+05:30","level":"INFO","msg":"handler: started","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:50:19.0954768+05:30","level":"INFO","msg":"sender: started","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:50:19.5927069+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T13:53:11.1975626+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/c0sd2q1i/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T13:53:11.1975626+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T13:55:55.3534024+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T13:55:55.3539683+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T13:55:56.3616207+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.389573,"progress":"800B/800B"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.389573,"progress":"1004B/1004B"},{"desc":"uploading config.yaml","runtime_seconds":0.0814996,"progress":"1.0KB/1.0KB"}],"total_operations":3}}
+{"time":"2025-03-05T13:55:57.3302536+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T13:55:58.6771333+05:30","level":"INFO","msg":"stream: closing","id":"c0sd2q1i"}
+{"time":"2025-03-05T13:55:58.6771333+05:30","level":"INFO","msg":"handler: closed","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:55:58.6771333+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:55:58.6771333+05:30","level":"INFO","msg":"sender: closed","stream_id":"c0sd2q1i"}
+{"time":"2025-03-05T13:55:58.6771333+05:30","level":"INFO","msg":"stream: closed","id":"c0sd2q1i"}

@@ -1,0 +1,24 @@
+{"time":"2025-03-05T15:34:59.585018+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250305_153459-ck3bqv19\\logs\\debug-core.log"}
+{"time":"2025-03-05T15:35:00.2150256+05:30","level":"INFO","msg":"created new stream","id":"ck3bqv19"}
+{"time":"2025-03-05T15:35:00.2155184+05:30","level":"INFO","msg":"stream: started","id":"ck3bqv19"}
+{"time":"2025-03-05T15:35:00.2155184+05:30","level":"INFO","msg":"sender: started","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:35:00.2155184+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:35:00.2155184+05:30","level":"INFO","msg":"handler: started","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:35:00.6339978+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-05T15:35:35.2748195+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.42.166.131:55486->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-05T15:35:37.4744457+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/ck3bqv19/file_stream\": dial tcp 35.186.228.49:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2025-03-05T15:35:37.5335782+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:39.8916981+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/ck3bqv19/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:41.6226542+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:44.7603362+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/ck3bqv19/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:50.813023+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:53.4796299+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/ck3bqv19/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-03-05T15:35:55.4534435+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-05T15:35:55.453994+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-05T15:35:56.4751589+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 0-2, summary, console lines 0-1","runtime_seconds":40.0588473,"error_status":"retrying: Post \"https://api.wandb.ai/files/da24m021-indian-institute-of-technology-madras/da24m021_da6401_assignment1/ck3bqv19/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}],"total_operations":1}}
+{"time":"2025-03-05T15:36:10.723898+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-05T15:36:13.6944291+05:30","level":"INFO","msg":"stream: closing","id":"ck3bqv19"}
+{"time":"2025-03-05T15:36:13.6944291+05:30","level":"INFO","msg":"handler: closed","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:36:13.6944291+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:36:13.6944291+05:30","level":"INFO","msg":"sender: closed","stream_id":"ck3bqv19"}
+{"time":"2025-03-05T15:36:13.6949361+05:30","level":"INFO","msg":"stream: closed","id":"ck3bqv19"}
