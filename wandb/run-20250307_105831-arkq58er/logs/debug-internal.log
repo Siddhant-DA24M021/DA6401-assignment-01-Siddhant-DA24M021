@@ -1,0 +1,16 @@
+{"time":"2025-03-07T10:58:31.8168175+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250307_105831-arkq58er\\logs\\debug-core.log"}
+{"time":"2025-03-07T10:58:33.4467286+05:30","level":"INFO","msg":"created new stream","id":"arkq58er"}
+{"time":"2025-03-07T10:58:33.4467286+05:30","level":"INFO","msg":"stream: started","id":"arkq58er"}
+{"time":"2025-03-07T10:58:33.4467286+05:30","level":"INFO","msg":"handler: started","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:58:33.4467286+05:30","level":"INFO","msg":"sender: started","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:58:33.4467286+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:58:33.934001+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-07T10:59:38.4059703+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-07T10:59:38.4059703+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-07T10:59:39.4583231+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.3485581,"progress":"1.2KB/1.2KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.3485581,"progress":"1002B/1002B"}],"total_operations":2}}
+{"time":"2025-03-07T10:59:39.8753501+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-07T10:59:41.3365602+05:30","level":"INFO","msg":"stream: closing","id":"arkq58er"}
+{"time":"2025-03-07T10:59:41.3365602+05:30","level":"INFO","msg":"handler: closed","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:59:41.3365602+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:59:41.3365602+05:30","level":"INFO","msg":"sender: closed","stream_id":"arkq58er"}
+{"time":"2025-03-07T10:59:41.3365602+05:30","level":"INFO","msg":"stream: closed","id":"arkq58er"}

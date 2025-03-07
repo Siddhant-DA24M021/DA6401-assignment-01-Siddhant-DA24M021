@@ -128,7 +128,7 @@ def sweep_hyperparameters(config = None):
 
 if __name__ == "__main__":
 
-    sweep_config = {"method": "random",
+    sweep_config = {"method": "bayes",
                     "metric": {"name": "val_accuracy", "goal": "maximize"},
                     "parameters": {
                         "dropout": {"values": [0]},

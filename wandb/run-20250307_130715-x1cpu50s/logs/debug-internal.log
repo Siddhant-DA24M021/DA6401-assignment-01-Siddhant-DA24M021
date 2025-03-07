@@ -1,0 +1,16 @@
+{"time":"2025-03-07T13:07:15.6754818+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250307_130715-x1cpu50s\\logs\\debug-core.log"}
+{"time":"2025-03-07T13:07:17.3061126+05:30","level":"INFO","msg":"created new stream","id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:17.3061126+05:30","level":"INFO","msg":"stream: started","id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:17.3061126+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:17.306743+05:30","level":"INFO","msg":"handler: started","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:17.306743+05:30","level":"INFO","msg":"sender: started","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:18.418024+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-07T13:07:51.6189633+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-07T13:07:51.6196326+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-07T13:07:52.6384885+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-x1cpu50s-PredictionSamples","runtime_seconds":1.405097,"subtasks":[{"desc":"media/images/a843115ce2d2c229d405.png","runtime_seconds":0.2499963,"progress":"623B/623B"},{"desc":"media/images/aa2537e6db41a0449fd7.png","runtime_seconds":0.2499963,"progress":"456B/456B"},{"desc":"media/images/b449258cadec84ae99ef.png","runtime_seconds":0.2499963,"progress":"379B/379B"},{"desc":"media/images/fe6a3e15cd7d872c763d.png","runtime_seconds":0.2499963,"progress":"514B/514B"},{"desc":"media/images/172e725a0b34c3130b1b.png","runtime_seconds":0.2494921,"progress":"528B/528B"},{"desc":"media/images/20334d5c72701e4587fb.png","runtime_seconds":0.2494921,"progress":"565B/565B"},{"desc":"media/images/93e68da330ebd09030ac.png","runtime_seconds":0.2494921,"progress":"469B/469B"},{"desc":"media/images/b4123f5e7714c1277113.png","runtime_seconds":0.2494921,"progress":"596B/596B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.2494921,"progress":"3.0KB/3.0KB"},{"desc":"media/images/4f052bd1a8264b5b48f8.png","runtime_seconds":0.2494921,"progress":"390B/390B"}]},{"desc":"uploading artifact run-x1cpu50s-TestDataConfusionMatrix_table","runtime_seconds":1.0271914}],"total_operations":2}}
+{"time":"2025-03-07T13:07:55.1106435+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-07T13:07:56.4752845+05:30","level":"INFO","msg":"stream: closing","id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:56.4752845+05:30","level":"INFO","msg":"handler: closed","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:56.4752845+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:56.4752845+05:30","level":"INFO","msg":"sender: closed","stream_id":"x1cpu50s"}
+{"time":"2025-03-07T13:07:56.4758606+05:30","level":"INFO","msg":"stream: closed","id":"x1cpu50s"}
