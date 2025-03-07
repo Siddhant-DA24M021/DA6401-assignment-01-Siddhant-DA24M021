@@ -8,7 +8,8 @@
 
 
 
-
+# GITHUB LINK:-
+# REPORT LINK:-
 
 
 
@@ -55,6 +56,7 @@ This project implements a simple neural network from scratch using Numpy and pyt
 12. optimizer.py: Implements optimization algorithms
 13. train.py: Trains the neural network and logs metrics using wandb
 14. utils.py: Helper functions for activation, loss, optimizer selection, and dataset splitting
+15. cross_entropy_vs_mean_squared_loss.py: File to compare cross-entropy loss vs mean-squared-error loss
 
 # Hyperparameter Tuning
 python hyperparameter_tuning.py
