@@ -2,7 +2,7 @@
 
 
 
-# GITHUB LINK:- https://github.com/Siddhant-DA24M021/DA6401-assignment-01-Siddhant-DA24M021.git
+# GITHUB LINK:- https://github.com/Siddhant-DA24M021/DA6401-assignment-01-Siddhant-DA24M021.git (This repo will be made public on 10th march night)
 # REPORT LINK:- https://api.wandb.ai/links/da24m021-indian-institute-of-technology-madras/tchaabjk
 
 
