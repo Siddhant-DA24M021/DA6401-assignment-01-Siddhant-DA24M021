@@ -2,14 +2,8 @@
 
 
 
-
-# DONT FORGET TO MAKE GITHUB REPO PUBLIC BEFORE SUBMITTING
-
-
-
-
-# GITHUB LINK:-
-# REPORT LINK:-
+# GITHUB LINK:- https://github.com/Siddhant-DA24M021/DA6401-assignment-01-Siddhant-DA24M021.git
+# REPORT LINK:- https://api.wandb.ai/links/da24m021-indian-institute-of-technology-madras/tchaabjk
 
 
 
@@ -59,11 +53,33 @@ This project implements a simple neural network from scratch using Numpy and pyt
 15. cross_entropy_vs_mean_squared_loss.py: File to compare cross-entropy loss vs mean-squared-error loss
 
 # Hyperparameter Tuning
+To run hyperparameter tuning using Weights & Biases sweeps, execute the following command:
 python hyperparameter_tuning.py
 
 # Using the model
-python train.py --dataset fashion_mnist --epochs 10 --batch_size 128 --hidden_size 64 --num_layers 3 --activation tanh --optimizer adam --learning_rate 0.001 --loss cross_entropy --weight_init Xavier
+python train.py --dataset fashion_mnist --epochs 15 --batch_size 128 --hidden_size 64 --num_layers 3 --activation tanh --optimizer adam --learning_rate 0.001 --loss cross_entropy --weight_init Xavier
 
+
+# Available command line arguments
+  -wp, --wandb_project         Project name used to track experiments in Weights & Biases dashboard (default: da24m021_da6401_assignment1)
+  -we, --wandb_entity          Wandb Entity used to track experiments in the Weights & Biases dashboard. (default: da24m021-indian-institute-of-technology-madras)
+  -d, --dataset                Dataset to use (choices: mnist, fashion_mnist, default: fashion_mnist)
+  -e, --epochs                 Number of epochs to train neural network. (default: 15)
+  -b, --batch_size             Batch size used to train neural network. (default: 128)
+  -l, --loss                   Loss function (choices: mean_squared_error, cross_entropy, default: cross_entropy)
+  -o, --optimizer              Optimizer (choices: sgd, momentum, nag, rmsprop, adam, nadam, default: adam)
+  -lr, --learning_rate         Learning rate used to optimize model parameters (default: 0.001)
+  -m, --momentum               Momentum used by momentum and nag optimizers. (default: 0.5)
+  -beta, --beta                Beta used by rmsprop optimizer (default: 0.5)
+  -beta1, --beta1              Beta1 used by adam and nadam optimizers. (default: 0.9)
+  -beta2, --beta2              Beta2 used by adam and nadam optimizers. (default: 0.999)
+  -eps, --epsilon              Epsilon used by optimizers. (default: 1e-08)
+  -w_d, --weight_decay         Weight decay used by optimizers. (default: 0.0)
+  -w_i, --weight_init          Weight initialization method (choices: random, Xavier, default: Xavier)
+  -nhl, --num_layers           Number of hidden layers used in feedforward neural network. (default: 3)
+  -sz, --hidden_size          Number of hidden neurons in a feedforward layer. (default: 64)
+  -a, --activation            Activation function (choices: identity, sigmoid, tanh, ReLU, default: tanh)
+  -oa, --output_activation     Output activation function (choices: softmax, identity, sigmoid, tanh, ReLU, default: softmax)
 
 
 # Self Declaration
