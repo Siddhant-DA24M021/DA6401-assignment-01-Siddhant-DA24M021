@@ -1,0 +1,16 @@
+{"time":"2025-03-10T11:26:09.9377866+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.7","symlink path":"C:\\da24m021_da6401_assignment1\\wandb\\run-20250310_112609-rfcy1bbd\\logs\\debug-core.log"}
+{"time":"2025-03-10T11:26:10.074157+05:30","level":"INFO","msg":"created new stream","id":"rfcy1bbd"}
+{"time":"2025-03-10T11:26:10.0752524+05:30","level":"INFO","msg":"stream: started","id":"rfcy1bbd"}
+{"time":"2025-03-10T11:26:10.0752524+05:30","level":"INFO","msg":"sender: started","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:26:10.0752524+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:26:10.0752524+05:30","level":"INFO","msg":"handler: started","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:26:10.5470876+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-03-10T11:27:01.5252771+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-03-10T11:27:01.5272052+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-03-10T11:27:02.5353722+05:30","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading artifact run-rfcy1bbd-PredictionSamples","runtime_seconds":1.4506171,"subtasks":[{"desc":"media/images/4f052bd1a8264b5b48f8.png","runtime_seconds":0.2421821,"progress":"390B/390B"},{"desc":"media/images/a843115ce2d2c229d405.png","runtime_seconds":0.2421821,"progress":"623B/623B"},{"desc":"media/images/b4123f5e7714c1277113.png","runtime_seconds":0.2415803,"progress":"596B/596B"},{"desc":"media/images/b449258cadec84ae99ef.png","runtime_seconds":0.2415803,"progress":"379B/379B"},{"desc":"media/images/fe6a3e15cd7d872c763d.png","runtime_seconds":0.2415803,"progress":"514B/514B"},{"desc":"media/images/20334d5c72701e4587fb.png","runtime_seconds":0.2415803,"progress":"565B/565B"},{"desc":"media/images/aa2537e6db41a0449fd7.png","runtime_seconds":0.2415803,"progress":"456B/456B"},{"desc":"Prediction Samples.table.json","runtime_seconds":0.2415803,"progress":"3.0KB/3.0KB"},{"desc":"media/images/172e725a0b34c3130b1b.png","runtime_seconds":0.2415803,"progress":"528B/528B"},{"desc":"media/images/59716f788268a859aece.png","runtime_seconds":0.2415803,"progress":"557B/557B"}]},{"desc":"uploading artifact run-rfcy1bbd-TestDataConfusionMatrix_table","runtime_seconds":1.0199523},{"desc":"uploading wandb-summary.json","runtime_seconds":0.6828238,"progress":"2.3KB/2.3KB"},{"desc":"uploading media\\table\\Test Data Confusion Matrix_table_17_56ae8f95d27b4f8d4ce5.table.json","runtime_seconds":0.6828238,"progress":"2.9KB/2.9KB"},{"desc":"uploading config.yaml","runtime_seconds":0.3216627,"progress":"2.0KB/2.0KB"}],"total_operations":5}}
+{"time":"2025-03-10T11:27:05.3498307+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-03-10T11:27:06.7321723+05:30","level":"INFO","msg":"stream: closing","id":"rfcy1bbd"}
+{"time":"2025-03-10T11:27:06.7321723+05:30","level":"INFO","msg":"handler: closed","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:27:06.7321723+05:30","level":"INFO","msg":"sender: closed","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:27:06.7321723+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"rfcy1bbd"}
+{"time":"2025-03-10T11:27:06.7321723+05:30","level":"INFO","msg":"stream: closed","id":"rfcy1bbd"}
